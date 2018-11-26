@@ -17,8 +17,8 @@ Some examples of what you could use this for include:
 * Display for services such as [Flightradar24](https://www.flightradar24.com/) or  [Flightaware](https://flightaware.com/)
 * Digital [fishtank](http://www.fishgl.com/) or [jellyfish](https://arodic.github.io/p/jellyfish/)
 * Streaming webcam display
-24 hour live [animated cat](http://www.nyan.cat/) display
-[Home automation](https://www.home-assistant.io) dashboard
+* 24 hour live [animated cat](http://www.nyan.cat/) display
+* [Home automation](https://www.home-assistant.io) dashboard
 
 ## Hardware required
 
