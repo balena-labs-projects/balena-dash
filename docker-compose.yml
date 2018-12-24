@@ -1,0 +1,6 @@
+version: '2'
+services:
+  wpe:
+    restart: always
+    build: ./wpe
+    privileged: true
