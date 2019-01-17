@@ -4,3 +4,7 @@ services:
     restart: always
     build: ./wpe
     privileged: true
+  scheduler:
+    restart: always
+    build: ./scheduler
+    privileged: true
