@@ -38,4 +38,13 @@ The list of items you’ll need is also included below:
 
 ![](https://www.balena.io/blog/content/images/2018/11/image17.jpg)
 
+## Automate backlight switching
+To use automatic backlight switching you’ll need to configure a few service variables for the scheduler service.
+
+`ENABLE_BACKLIGHT_TIMER=1`
+`BACKLIGHT_ON=0 8 * * *`
+`BACKLIGHT_OFF=0 23 * * *`
+
+The `BACKLIGHT_ON` and `BACKLIGHT_OFF` variables accept standard cron syntax; take a look at https://crontab.guru if you’re not familiar. For more instructions check out [our blog post](https://www.balena.io/blog/automate-the-backlight-timer-on-your-balenadash-display/).
+
 ### For a complete tutorial on how to use balenaDash, please check out our blog post at [https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/](https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/) 
