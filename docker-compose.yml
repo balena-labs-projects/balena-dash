@@ -1,0 +1,10 @@
+version: '2'
+services:
+  wpe:
+    restart: always
+    build: ./wpe
+    privileged: true
+  scheduler:
+    restart: always
+    build: ./scheduler
+    privileged: true
