@@ -38,6 +38,13 @@ The list of items you’ll need is also included below:
 
 ![](https://www.balena.io/blog/content/images/2018/11/image17.jpg)
 
+## Controlling content
+
+### Loading a URL
+
+To configure the URL displayed by webkit, set the **`WPE_URL`** environment
+variable. The default value is [Youtube TV](http://www.youtube.com/tv)
+
 ## Automate backlight switching
 To use automatic backlight switching you’ll need to configure a few service variables for the scheduler service.
 
