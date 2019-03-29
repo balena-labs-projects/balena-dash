@@ -45,6 +45,10 @@ The list of items you’ll need is also included below:
 To configure the URL displayed by webkit, set the **`WPE_URL`** environment
 variable. The default value is [Youtube TV](http://www.youtube.com/tv)
 
+### Switching URLs quickly using your web browser or Slack
+
+Your balenaDash device is also running a small webserver on port 80.  The screen will show the URL configured at `WPE_URL` normally, but the webserver allows you to put other URLs on screen quickly and easily.  If you tell balenaCloud to expose your device's public URL, then you can even control it with Slack (or `curl`, or anything that can use webhooks).  [More details](https://github.com/mozz100/tohora/blob/master/README.md)
+
 ## Automate backlight switching
 To use automatic backlight switching you’ll need to configure a few service variables for the scheduler service.
 
@@ -54,9 +58,5 @@ To use automatic backlight switching you’ll need to configure a few service va
 
 The `BACKLIGHT_ON` and `BACKLIGHT_OFF` variables accept standard cron syntax; take a look at https://crontab.guru if you’re not familiar. For more instructions check out [our blog post](https://www.balena.io/blog/automate-the-backlight-timer-on-your-balenadash-display/).
 
-## Switching URLs quickly using your web browser or Slack
 
-Your balenaDash device is also running a small webserver on port 80.  The screen will show the URL configured at `WPE_URL` normally, but the webserver allows you to put other URLs on screen quickly and easily.  If you tell balenaCloud to expose your device's public URL, then you can even control it with Slack (or `curl`, or anything that can use webhooks).  [More details](https://github.com/mozz100/tohora/blob/master/README.md)
-
-
-### For a complete tutorial on how to use balenaDash, please check out our blog post at [https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/](https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/) 
+### For a complete tutorial on how to use balenaDash, please check out our blog post at [https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/](https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/)
