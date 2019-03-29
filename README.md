@@ -1,4 +1,4 @@
-![balenaDash](https://www.balena.io/blog/content/images/2018/11/balenaDash.png)
+![balenaDash](https://www.balena.io/blog/content/images/2019/03/balenaDash_logo.png)
 
 Try our simple [balenaCloud](https://www.balena.io/cloud) starter project to set up a Raspberry Pi and LCD or monitor to display any webpage or web-based dashboard. We’re creatively calling it balenaDash! Follow along with our guide to get up and running in under 30 minutes.
 
@@ -37,6 +37,13 @@ The list of items you’ll need is also included below:
 * Case (optional)
 
 ![](https://www.balena.io/blog/content/images/2018/11/image17.jpg)
+
+## Controlling content
+
+### Loading a URL
+
+To configure the URL displayed by webkit, set the **`WPE_URL`** environment
+variable. The default value is [Youtube TV](http://www.youtube.com/tv)
 
 ## Automate backlight switching
 To use automatic backlight switching you’ll need to configure a few service variables for the scheduler service.
