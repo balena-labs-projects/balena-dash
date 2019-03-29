@@ -4,6 +4,8 @@ services:
     restart: always
     build: ./wpe
     privileged: true
+    ports:
+      - 80:80
   scheduler:
     restart: always
     build: ./scheduler
