@@ -1,4 +1,4 @@
-![balenaDash](https://www.balena.io/blog/content/images/2018/11/balenaDash.png)
+![balenaDash](https://www.balena.io/blog/content/images/2019/03/balenaDash_logo.png)
 
 Try our simple [balenaCloud](https://www.balena.io/cloud) starter project to set up a Raspberry Pi and LCD or monitor to display any webpage or web-based dashboard. We’re creatively calling it balenaDash! Follow along with our guide to get up and running in under 30 minutes.
 
@@ -29,7 +29,7 @@ We’ve partnered with our friends at [PiSupply](https://pisupp.ly/) to make it 
 
 The list of items you’ll need is also included below:
 
-* Raspberry Pi 3B
+* Raspberry Pi 3B/3B+ (**Note:** this project will not work with the Pi Zero or older devices with < 1GB RAM)
 * 16GB Micro-SD Card (we recommend Sandisk Extreme Pro SD cards)
 * Display (any Raspberry Pi display will work for this project)
 * Micro-USB cable
