@@ -4,7 +4,7 @@ Try our simple [balenaCloud](https://www.balena.io/cloud) starter project to set
 
 * [Introduction](#introduction)
 * [Hardware required](#hardware-required)
-* [Using WiFi connect](#using-wifi-connect)
+* [Using WiFi Connect](#using-wifi-connect)
 * [Controlling content](#controlling-content)
 * [Automate backlight switching](#automate-backlight-switching)
 
@@ -43,7 +43,7 @@ The list of items you’ll need is also included below:
 
 ![](https://www.balena.io/blog/content/images/2018/11/image17.jpg)
 
-## Using wifi-connect
+## Using WiFi Connect
 
 The balenaDash project includes [wifi-connect](https://github.com/balena-io/wifi-connect) which enables your device to operate as a WiFi access point and allow you to join a different WiFi network using captive portal functionality. Although you can specify a WiFi network to join when you first add your device and download the image from the balenaCloud dashboard, there may be situations where you need to change that.
 
