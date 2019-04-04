@@ -2,6 +2,11 @@
 
 Try our simple [balenaCloud](https://www.balena.io/cloud) starter project to set up a Raspberry Pi and LCD or monitor to display any webpage or web-based dashboard. We’re creatively calling it balenaDash! Follow along with our guide to get up and running in under 30 minutes.
 
+* [Introduction](#introduction)
+* [Hardware required](#hardware-required)
+* [Using WiFi Connect](#using-wifi-connect)
+* [Controlling content](#controlling-content)
+* [Automate backlight switching](#automate-backlight-switching)
 
 ## Introduction
 
@@ -37,6 +42,14 @@ The list of items you’ll need is also included below:
 * Case (optional)
 
 ![](https://www.balena.io/blog/content/images/2018/11/image17.jpg)
+
+## Using WiFi Connect
+
+The balenaDash project includes [wifi-connect](https://github.com/balena-io/wifi-connect) which enables your device to operate as a WiFi access point and allow you to join a different WiFi network using captive portal functionality. Although you can specify a WiFi network to join when you first add your device and download the image from the balenaCloud dashboard, there may be situations where you need to change that.
+
+WiFi Connect periodically tests for a functional internet connection, if nothing is found the device sets itself up as a WiFi access point named `balenaDash` that you can join with a mobile device. **Note: due to the fact the built-in WebUI for balenaDash uses port 80, the default captive portal popup screen will not work.**
+
+To use WiFi Connect you need to join the network with a mobile device and ignore the captive portal popup. Ensure that you remain connected to the `balenaDash` network and visit the IP address of the device in a browser on port `8080`. For example `http://<ip of balenaDash device>:8080`. This will allow you to access WiFi Connect, perform a site survey and join a different WiFi network.
 
 ## Controlling content
 
