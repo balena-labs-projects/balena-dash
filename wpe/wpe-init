@@ -7,4 +7,4 @@ fbcp &
 
 WPE_BCMRPI_TOUCH=1 WPELauncher $WPE_URL &
 
-./tohora 80 WPELauncher
+./tohora 8080 WPELauncher

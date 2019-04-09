@@ -23,7 +23,7 @@ while [[ true ]]; do
   else
       printf 'Starting WiFi Connect\n'
       # Start wifi-connect with SSID "balenaDash", Password "balenaDash" and make it exit if no interaction happens within 10 minutes.
-      ./wifi-connect -a 600 -s balenaDash -p balenaDash -o 8080
+      ./wifi-connect -a 600 -s balenaDash -p balenaDash -o 80
   fi
   # wait 1 minute before checking again for internet connectivity
   sleep 60
