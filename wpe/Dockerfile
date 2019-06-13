@@ -1,4 +1,4 @@
-FROM petrosagg/balena-wpe:raspberrypi3-094d55a
+FROM marhoy/balena-wpe
 
 COPY udev-rules/ /etc/udev/rules.d/
 
