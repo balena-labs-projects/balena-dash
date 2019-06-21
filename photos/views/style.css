@@ -1,0 +1,13 @@
+* { 
+  box-sizing: border-box; 
+  }
+  html {
+    background-color:black;
+    height: 100%;
+    margin: 0;
+    background-blend-mode: darken;
+    transition: 3s;
+  }
+  body { 
+    margin: 0; 
+  }

@@ -5,6 +5,10 @@ COPY udev-rules/ /etc/udev/rules.d/
 COPY wpe-init /wpe-init
 RUN chmod +x /wpe-init
 
+COPY public_html /var/lib/public_html
+
+# ENV WPE_URL="file:///var/lib/public_html/index.html"
+
 CMD [ "/wpe-init" ]
 
 ENV TOHORA_VERSION=0.3.2

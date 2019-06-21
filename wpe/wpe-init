@@ -25,12 +25,18 @@ export WPE_BCMRPI_TOUCH=1
 # Start Tohora
 ./tohora 8080 cog &
 
-# wait for it
+# Wait for it
 sleep 1
 
-# ...dary! Post the WPE_URL to Tohora to show that first
-if [ ! -z ${WPE_URL+x} ];
-  then wget --post-data "url=$WPE_URL" http://localhost:8080/launch/
+# Check if we have a GALLERY_URL set, otherwise load WPE_URL var
+if [ ! -z ${GALLERY_URL} ]
+  then
+    echo "Loading gallery"
+    WPE_URL="file:///var/lib/public_html/index.html"
 fi
 
-tail -f /dev/null
+if [ ! -z ${WPE_URL+x} ];
+
+  then wget --post-data "url=$WPE_URL" http://localhost:8080/launch/
+  tail -f /dev/null
+fi
