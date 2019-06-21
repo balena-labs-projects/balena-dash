@@ -4,8 +4,8 @@
 // Call the packages we need
 var express   = require("express");
 var request   = require("request");
-var cors      = require("cors");
 var rp        = require("request-promise-native");
+var cors      = require("cors");
 var _chunk    = require("lodash.chunk");
 var fs        = require("fs");
 var path      = require("path");

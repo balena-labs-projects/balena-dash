@@ -1,5 +1,4 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-node:10-stretch-build
-# FROM balenalib/%%BALENA_MACHINE_NAME%%-node:latest
 
 # Defines our working directory in container
 WORKDIR /usr/src/app~

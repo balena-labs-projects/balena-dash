@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/balena-io-playground/balena-dash-google-photos.git"
+    "url": "git+https://github.com/balena-io-projects/balena-dash.git"
   },
   "keywords": [
     "webserver",
@@ -19,11 +19,10 @@
   "author": " Daniel Andrade <daniel@balena.io>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/balena-io-playground/balena-dash-google-photos/issues"
+    "url": "https://github.com/balena-io-projects/balena-dash/issues"
   },
-  "homepage": "https://github.com/balena-io-playground/balena-dash-google-photos#readme",
+  "homepage": "https://github.com/balena-io-projects/balena-dash#readme",
   "dependencies": {
-    "balena-cli": "^10.11.0",
     "cors": "^2.8.5",
     "ejs": "*",
     "express": "*",
