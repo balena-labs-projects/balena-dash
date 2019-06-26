@@ -11,6 +11,7 @@ var fs        = require("fs");
 var path      = require("path");
 var sharp     = require("sharp");
 var schedule  = require('node-schedule');
+
 var app       = express();
 
 // Only run server if GALLERY_URL is defined
@@ -112,6 +113,19 @@ if(process.env.GALLERY_URL) {
     cronSchedule = process.env.CRON_SCHEDULE;
     console.log("🐉 - Scheduler configured for "+cronSchedule);
   }
+
+  // Get resize width
+  var maxWidth = 1000;
+  if (process.env.RESIZE_WIDTH) {
+    maxWidth = process.env.RESIZE_WIDTH;
+  }
+
+  // Get image compress quality
+  var compressQuality = 90;
+  if (process.env.COMPRESS_QUALITY) {
+    compressQuality = parseInt(process.env.COMPRESS_QUALITY);
+  }
+  
 
   // Server Start
   // =============================================================================
@@ -250,7 +264,7 @@ function fetchImages(albumURL) {
               var photo = metadata.photos[photoGuid];
 
               // Download images
-              console.log("Downloading files: " + "file" + i + ".jpg");
+              console.log("[file"+i+".jpg] - Downloading");
               downloadFile(photo.url, "file" + i + ".jpg");
               i++;
             }
@@ -454,7 +468,7 @@ function downloadFile(url, dest, cb) {
   });
 
   // close() is async, call cb after close completes
-  file.on("finish", () => file.close(resizeFile(dest)));
+  file.on("finish", () => file.close(resizeFile(dest, maxWidth)));
 
   // check for request errors
   sendReq.on("error", err => {
@@ -469,20 +483,29 @@ function downloadFile(url, dest, cb) {
   });
 }
 
-function resizeFile(imageFile, maxWidth = 1200) {
-  console.log("Analyzing: " + imageFile);
+function resizeFile(imageFile, maxWidth = 1000) {
+  console.log("["+imageFile+"] - Analyzing");
 
   try {
     if (fs.existsSync(imageFile)) {
+
       // Resize image
-      console.log("Resizing " + imageFile + " to " + maxWidth + "px.");
+      console.log("["+imageFile+"] - Resizing to "+ maxWidth + "px and compressing it to "+ compressQuality +"%.");
       sharp(imageFile)
-        .resize({ width: maxWidth })
-        .toBuffer(function(err, buffer) {
+        .resize(maxWidth,maxWidth, { fit: 'inside', withoutEnlargement: true })
+        .jpeg({
+          quality: compressQuality,
+          chromaSubsampling: '4:4:4'
+        })
+        .toBuffer((err, buffer) => {
           if (err) {
             console.log(imageFile + " - " + err);
           }
-          fs.writeFile(imageFile, buffer, function(e) {});
+          fs.writeFile(imageFile, buffer, (e) => {
+            if(e){
+              console.log("Error saving image to file: "+e);
+            }
+          });
         });
     }
   } catch (err) {
