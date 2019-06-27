@@ -86,9 +86,7 @@ If you are using the official Raspberry Pi 7 inch display, you can follow [this 
 
 Depending on the orientation of the majority of your photos, you can choose to have the display on horizontal or vertical mode. On **Fleet Configuration** add a variable called `BALENA_HOST_CONFIG_display_rotate` with value `2` for horizontal or `1` for vertical.
 
-#### Getting the ALBUM_URL
-
-##### Google Photos Albums
+#### Google Photos Albums
 
 ![](https://raw.githubusercontent.com/balena-io-playground/balena-dash-google-photos/master/media/google_photos.gif)
 
@@ -97,13 +95,13 @@ Go to [https://photos.google.com](https://photos.google.com) and select the albu
 Click in the share button, click in the `Create link` button and copy the the url. 
 Example: **https://photos.app.goo.gl/rAnDoMvAlUe123**.
 
-##### Dropbox Photo Albums
+#### Dropbox Photo Albums
 
 ![](https://raw.githubusercontent.com/balena-io-playground/balena-dash-google-photos/master/media/dropbox.gif)
 
 On the [dropbox](https://www.dropbox.com/home) website, go to the folder that contains the photos and click on `Share Folder` and then `Copy link`. This will the URL you will need to add to balenaCloud.
 
-##### Apple iCloud Photo Album
+#### Apple iCloud Photo Album
 
 Create a photo album and copy the share url, similar to `https://www.icloud.com/sharedalbum/#ALBUM-ID`
 
