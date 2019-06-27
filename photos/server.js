@@ -83,28 +83,28 @@ if(process.env.GALLERY_URL) {
   // Set slideshow time
   var slideshow_timer = 10000;
   if (process.env.GALLERY_SLIDESHOW_DELAY) {
-    var slideshow_timer = process.env.GALLERY_SLIDESHOW_DELAY;
+    var slideshow_timer = parseInt(process.env.GALLERY_SLIDESHOW_DELAY);
   }
 
   // Show photo scaling
   var image_styles = "cover";
   if (process.env.GALLERY_IMAGE_STYLE) {
     var styles = ["contain", "cover"];
-    var transition = process.env.GALLERY_IMAGE_STYLE.toLowerCase();
-    if (styles.includes(transition)) {
-      image_styles = transition;
+    var container = process.env.GALLERY_IMAGE_STYLE.toLowerCase();
+    if (styles.includes(container)) {
+      image_styles = container;
     }
   } 
 
   // Gallery transition effect
-  var transition = "fade";
+  var transition = "fade" ;
   if (process.env.GALLERY_EFFECT) {
     var effects = ["fade", "horizontal", "vertical", "kenburns", "false"];
     var transitionSelected = process.env.GALLERY_EFFECT.toLowerCase();
     if (effects.includes(transitionSelected)) {
-      transition = transitionSelected;
+      transition = transitionSelected; 
     }
-  }
+  } 
 
   // Get gallery update cron timing
   // 0 */12 * * *
@@ -117,7 +117,7 @@ if(process.env.GALLERY_URL) {
   // Get resize width
   var maxWidth = 1000;
   if (process.env.RESIZE_WIDTH) {
-    maxWidth = process.env.RESIZE_WIDTH;
+    maxWidth = parseInt(process.env.RESIZE_WIDTH);
   }
 
   // Get image compress quality

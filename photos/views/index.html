@@ -10,19 +10,21 @@
 
     <style>
       .sy-slide > img {
+
         margin: auto;
         padding: 0;
         display: block;
         border: 0; 
         width: 100%;
-          height: 100%;
+        height: 100%;
         <% if (image_styles == "contain") { %>
           object-fit: contain;
         <% } else { %>
           object-fit: cover;
-        <% } %>
+        <% } %> 
+        
       }
-  </style>
+    </style>
 
   </head>
   <body>
@@ -34,6 +36,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="views/slippry.min.js"></script>
+  
     <script>
 
       // Check if images array are updated, otherwise reload page
@@ -46,40 +49,58 @@
         console.log("Starting");
         var currentImageId = 0;
         var currentID = 2;
-        // Get first image
-        // getNextImage(currentImageId);
       }
  
-          jQuery(document).ready(function(){
-                
-                jQuery('#slides').slippry({
-                  pager: false,
-                  controls: false,
-                  captions: false,
-                  useCSS: false,
-                  transition: "<%= transition %>",
-                  speed: 4000, // transition speed in milliseconds
-                  pause: <%= timer %>, // slide time
+      jQuery(document).ready(function(){
 
-                  onSlideBefore: function (el, index_old, index_new) {
-                    console.log("currentImageId: "+currentImageId + " - currentID: "+currentID);
-                    getNextImage(currentImageId);
-                  }
-                });
+        var transEffect = ("<%= transition %>" == "false") ? false : "<%= transition %>";
+      
+        jQuery('#slides').slippry({
+          pager: false,
+          controls: false,
+          captions: false,
+          useCSS: false,
+          transition: transEffect,
+          speed: 4000, // transition speed in milliseconds
+          easing: "linear",
+          pause: <%= timer %>, // slide time
 
-                setDimensions();
+          onSlideBefore: function (el, index_old, index_new) {
+            console.log("currentImageId: "+currentImageId + " - currentID: "+currentID);
+            getNextImage(currentImageId);
 
-              });
+            <% if (image_styles == "contain" && transEffect == false) { %>
+
+              // if using contain on false slide effect, hide previous image
+              if(currentID%2==0){
+                jQuery('#image01').hide();
+                jQuery('#image02').show();
+              } else {
+                jQuery('#image02').hide();
+                jQuery('#image01').show();
+              }
+              
+            <% } %> 
+          }
+        });
+
+        setDimensions();
+
+      });
         
 
       function changeImage(imageurl, imageid){
+
         document.getElementById(imageid).src=imageurl;
+
       }
 
       function setDimensions(){
+
         var windowsHeight = $(window).height();
         $('.sy-slides-crop').css('height', windowsHeight + 'px');
         $('.sy-slide').css('height', windowsHeight + 'px');
+
       }
 
       function getNextImage(id) {
@@ -100,6 +121,7 @@
               console.log("Error");
             }
         });
+
       }
 
       function processData(result){
@@ -112,6 +134,5 @@
       }
 
     </script>
-
   </body>
 </html>
