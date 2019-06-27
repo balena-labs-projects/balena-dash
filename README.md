@@ -121,7 +121,7 @@ Create a photo album and copy the share url, similar to `https://www.icloud.com/
 | RESIZE_WIDTH            | * Resize image width or height (larger side) in pixels                                                                                                |                                                | 1000px        | 
 | COMPRESS_QUALITY        | * Image compression                                                                                                                                   | 0 - 100                                        | 90            | 
 
-  * Only available for iCloud photos
+    * Only available for iCloud photos
 
 ### For a complete tutorial on how to use balenaDash, please check out our blog post at [https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/](https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/)
 
