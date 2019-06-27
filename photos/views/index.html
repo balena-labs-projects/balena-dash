@@ -54,7 +54,8 @@
       jQuery(document).ready(function(){
 
         var transEffect = ("<%= transition %>" == "false") ? false : "<%= transition %>";
-      
+        var imageStyles = "<%= image_styles %>";
+
         jQuery('#slides').slippry({
           pager: false,
           controls: false,
@@ -69,7 +70,9 @@
             console.log("currentImageId: "+currentImageId + " - currentID: "+currentID);
             getNextImage(currentImageId);
 
-            <% if (image_styles == "contain" && transEffect == false) { %>
+            if (imageStyles == "contain" && transEffect == false) {
+
+              // console.log("imageStyle:"+imageStyles+" - Transition effect: "+transEffect);
 
               // if using contain on false slide effect, hide previous image
               if(currentID%2==0){
@@ -80,7 +83,7 @@
                 jQuery('#image01').show();
               }
               
-            <% } %> 
+            } 
           }
         });
 
