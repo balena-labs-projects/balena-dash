@@ -184,6 +184,7 @@ function fetchImages(albumURL) {
           photos = extractPhotos(body);
           photos = [...new Set(photos)]; // save only unique values
 
+          console.log("Found " + photos.length + " images.");
           setImagesArray(photos);
         }
 
@@ -221,6 +222,7 @@ function fetchImages(albumURL) {
             photos.push(entry);
           });
 
+          console.log("Found " + photos.length + " images.");
           setImagesArray(photos);
         }
 
