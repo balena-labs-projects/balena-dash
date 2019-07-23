@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+
+    function status(response) {
+        console.log(response)
+        if (response.ok) {
+          return response
+        }
+        console.log(response.statusText)
+        throw new Error(response.statusText)
+    }
+
+    var reload = false;
+    $(document).ready(function() {
+        setInterval(() => {
+          fetch('http://photos:8888/')
+          .then(status)
+          .then(function(data) {
+            console.log('fetch success');
+            $('#loader').hide();
+            window.location = 'http://photos:8888/'
+            if (reload) {
+              reload = false
+              window.location.reload(true)
+            }
+
+          }).catch(function(error) {
+            console.log('Request failed', error);
+            reload = true
+          });
+        }, 1000);
+    })
+  </script>
+</head>
+<body>
+  <div id="loader">
+    <img src="balena_icon.svg" width="70" height="70">
+  </div>
+</body>
+</html>

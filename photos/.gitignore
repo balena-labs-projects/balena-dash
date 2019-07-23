@@ -1,0 +1,14 @@
+# Temporary files.
+.#*
+package-lock.json
+
+# Log files.
+*.log
+
+# Don't push node_modules - we want the build server to install these.
+node_modules/
+apple/
+dropbox/
+temp.js
+#OSX hidden metadata file
+.DS_Store
