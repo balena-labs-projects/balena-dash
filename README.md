@@ -44,6 +44,16 @@ The list of items you’ll need is also included below:
 
 ![](https://www.balena.io/blog/content/images/2018/11/image17.jpg)
 
+## Setup and configuration
+
+Use of balenaDash requires that you allocate more memory to the GPU. This is achieved by adding (or editing the existing) the **Device configuration variable** `RESIN_HOST_CONFIG_gpu_mem`, for this project we recommend setting it to `396`.
+
+### Official Raspberry Pi 7-inch display
+
+If you are using the official Raspberry Pi 7 inch display, you can follow [this tutorial](https://www.balena.io/blog/assembling-the-official-raspberry-pi-touchscreen) to assemble and configure the screen.
+
+Depending on the orientation of the majority of your content or photos, you can choose to have the display in horizontal or vertical mode. On **Fleet Configuration** add a variable called `BALENA_HOST_CONFIG_display_lcd_rotate` with value `2` for horizontal (180º rotation) or `1` for vertical (90º clockwise rotation). More details about the options for this are available [on the Raspberry Pi site](https://www.raspberrypi.org/documentation/configuration/config-txt/video.md).
+
 ## Using WiFi Connect
 
 The balenaDash project includes [wifi-connect](https://github.com/balena-io/wifi-connect) which enables your device to operate as a WiFi access point and allow you to join a different WiFi network using captive portal functionality. Although you can specify a WiFi network to join when you first add your device and download the image from the balenaCloud dashboard, there may be situations where you need to change that.
@@ -80,19 +90,13 @@ The main objective of this project is to create a physical photo album that is e
 
 This is the perfect gift for family and friends. Give a smart photo album to your mother or grandmother so that they can keep up with your baby pictures, for example.
 
-### Installation and configuration
-
-If you are using the official Raspberry Pi 7 inch display, you can follow [this tutorial](https://www.balena.io/blog/assembling-the-official-raspberry-pi-touchscreen) to assemble and configure the screen to your device.
-
-Depending on the orientation of the majority of your photos, you can choose to have the display on horizontal or vertical mode. On **Fleet Configuration** add a variable called `BALENA_HOST_CONFIG_display_rotate` with value `2` for horizontal or `1` for vertical.
-
 #### Google Photos Albums
 
 ![](https://raw.githubusercontent.com/balena-io-playground/balena-dash-google-photos/master/media/google_photos.gif)
 
 Go to [https://photos.google.com](https://photos.google.com) and select the album that you want to share.
 
-Click in the share button, click in the `Create link` button and copy the the url. 
+Click in the share button, click in the `Create link` button and copy the the url.
 Example: **https://photos.app.goo.gl/rAnDoMvAlUe123**.
 
 #### Dropbox Photo Albums
@@ -116,13 +120,11 @@ Create a photo album and copy the share url, similar to `https://www.icloud.com/
 | GALLERY_IMAGE_STYLE     | `Contain` shows the entire image on the screen. `Cover` zooms the image filling the entire screen.                                                    | contain,  cover                                | cover         |
 | GALLERY_EFFECT          | Transition effects                                                                                                                                    | fade,  horizontal,  vertical,  kenburns, false | fade          |
 | CRON_SCHEDULE           | Cron scheduler to reload images to get changes                                                                                                        |                                                | 0 */12 * * *  |
-| RESIZE_WIDTH            | * Resize image width or height (larger side) in pixels                                                                                                |                                                | 1000px        | 
-| COMPRESS_QUALITY        | * Image compression                                                                                                                                   | 0 - 100                                        | 90            | 
+| RESIZE_WIDTH            | * Resize image width or height (larger side) in pixels                                                                                                |                                                | 1000px        |
+| COMPRESS_QUALITY        | * Image compression                                                                                                                                   | 0 - 100                                        | 90            |
 
     * Only available for iCloud photos
 
 Note that after some performance tests on the Raspberry Pi 2 & 3, the combination of `GALLERY_IMAGE_STYLE = contain` and `GALLERY_EFFECT = fade or kenburns` can make the transition effects choppy.
 
 ### For a complete tutorial on how to use balenaDash, please check out our blog post at [https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/](https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/)
-
-
