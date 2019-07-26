@@ -50,7 +50,7 @@ Use of balenaDash requires that you allocate more memory to the GPU. This is ach
 
 ### Official Raspberry Pi 7-inch display
 
-If you are using the official Raspberry Pi 7 inch display, you can follow [this tutorial](https://www.balena.io/blog/assembling-the-official-raspberry-pi-touchscreen) to assemble and configure the screen.
+If you are using the official [Raspberry Pi 7 inch display](https://www.raspberrypi.org/products/raspberry-pi-touch-display/), you can follow [this tutorial](https://www.balena.io/blog/assembling-the-official-raspberry-pi-touchscreen) to assemble and configure the screen.
 
 Depending on the orientation of the majority of your content or photos, you can choose to have the display in horizontal or vertical mode. On **Fleet Configuration** add a variable called `BALENA_HOST_CONFIG_display_lcd_rotate` with value `2` for horizontal (180º rotation) or `1` for vertical (90º clockwise rotation). More details about the options for this are available [on the Raspberry Pi site](https://www.raspberrypi.org/documentation/configuration/config-txt/video.md).
 
@@ -67,7 +67,7 @@ To use WiFi Connect you need to join the `balenaDash` network and you should see
 ### Loading a URL
 
 To configure the URL displayed by webkit, set the **`WPE_URL`** environment
-variable. The default value is [Youtube TV](http://www.youtube.com/tv)
+variable. If nothing is set, balenaDash will display the balenaOS logo on the screen.
 
 ### Switching URLs quickly using your web browser or Slack
 
