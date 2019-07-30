@@ -1,4 +1,12 @@
 #!/bin/bash
+
+if [ -n "${TIMEZONE}" ]; then
+  echo "Setting timezone to ${TIMEZONE}"
+  cp "/usr/share/zoneinfo/${TIMEZONE}" /etc/localtime \
+  && echo "${TIMEZONE}" >  /etc/timezone \
+  || echo "WARNING: couldn't set this timezone."
+fi
+
 if [ "$ENABLE_BACKLIGHT_TIMER" -eq "1" ]
 then
   (crontab -l; echo "${BACKLIGHT_ON:-0 8 * * *} /usr/src/backlight_on.sh") | crontab -
