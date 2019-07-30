@@ -291,7 +291,31 @@ function fetchImages(albumURL) {
         setImagesArray(images);
         console.log("error:", error);
       });
-  } else {
+  } 
+  else if (albumURL === "USBDRIVE") {
+    let usbPhotos = listImagesInDirSync('/usbstorage')
+    let currentPhotos = listImagesInDirSync(path.join(path.dirname(require.main.filename), 'views/usbstorage'))
+    
+    try {
+      if (usbPhotos.length > 0) {
+        // Only update photos if there are new ones on /usbstorage
+        currentPhotos.map(p => fs.unlinkSync(p))
+        usbPhotos.map(p => fs.copyFileSync(p, `views/usbstorage/${path.basename(p)}`))
+        let newPhotos = listImagesInDirSync('views/usbstorage')
+        setImagesArray(newPhotos);
+        console.log(`Got ${newPhotos.length} image(s) from /usbstorage.`);
+      } else if (currentPhotos.length === 0) {
+        images.push("views/album_url_error.png");
+        setImagesArray(images);
+        console.log("No images found on views/usbstorage folder.");
+      }
+    } catch (error) {
+      images.push("views/album_url_error.png");
+      setImagesArray(images);
+      console.log("error:", error);
+    }
+  }
+  else {
     images.push("views/album_url_error.png");
     setImagesArray(images);
     console.log("error: Could not parse album.");
@@ -586,6 +610,23 @@ function listImagesInDir(directory) {
   });
 
   return images;
+}
+
+/**
+ * List images synchronously in directory
+ * @param {String} directory Directory to check for images as string.
+ */
+function listImagesInDirSync (directory) {
+  if (!fs.existsSync(directory)) return [];
+  let newDirents = fs.readdirSync(directory, { withFileTypes: true });
+  let files = newDirents
+    .filter(d => !d.isDirectory() && d.isFile())                                      // remove directories
+    .map(d => d.name)                                                                 // file name
+    .filter(f => !(/(^|\/)\.[^\/\.]/g).test(f))                                       // remove files starting with . (macOS .DS_STORE for example)
+    .filter(f => [".jpg", ".jpeg", ".gif", ".png", ".bmp"].includes(path.extname(f))) // remove files that are not an image
+    .map(f => `${directory}/${f}`);                                                   // rebuild file path
+
+  return files;
 }
 
 /**
