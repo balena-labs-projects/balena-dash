@@ -10,7 +10,7 @@ var _chunk    = require("lodash.chunk");
 var fs        = require("fs");
 var path      = require("path");
 var sharp     = require("sharp");
-var schedule  = require('node-schedule');
+var schedule  = require("node-schedule");
 
 var app       = express();
 
@@ -23,10 +23,10 @@ if(process.env.GALLERY_URL) {
   // Enable static CSS styles
   app.use(express.static("styles"));
 
-  // Set our port
+  // Set server port
   var port = process.env.PORT || 8888;
 
-  // Get an instance of the express Router
+  // Get an instance of the express router
   var router = express.Router();
 
   // Main route
@@ -81,13 +81,13 @@ if(process.env.GALLERY_URL) {
   fetchImages(process.env.GALLERY_URL);
 
   // Set slideshow time
-  var slideshow_timer = 10000;
+  var slideshow_timer = 10000; // default value
   if (process.env.GALLERY_SLIDESHOW_DELAY) {
     var slideshow_timer = parseInt(process.env.GALLERY_SLIDESHOW_DELAY);
   }
 
-  // Show photo scaling
-  var image_styles = "cover";
+  // Set photo scaling
+  var image_styles = "cover"; // default value
   if (process.env.GALLERY_IMAGE_STYLE) {
     var styles = ["contain", "cover"];
     var container = process.env.GALLERY_IMAGE_STYLE.toLowerCase();
@@ -97,7 +97,7 @@ if(process.env.GALLERY_URL) {
   } 
 
   // Gallery transition effect
-  var transition = "fade" ;
+  var transition = "fade" ; // default value
   if (process.env.GALLERY_EFFECT) {
     var effects = ["fade", "horizontal", "vertical", "kenburns", "false"];
     var transitionSelected = process.env.GALLERY_EFFECT.toLowerCase();
@@ -108,24 +108,29 @@ if(process.env.GALLERY_URL) {
 
   // Get gallery update cron timing
   // 0 */12 * * *
-  var cronSchedule = "0 */12 * * *";
+  var cronSchedule = "0 */12 * * *"; // default value
   if (process.env.CRON_SCHEDULE) {
     cronSchedule = process.env.CRON_SCHEDULE;
     console.log("🐉 - Scheduler configured for "+cronSchedule);
   }
 
   // Get resize width
-  var maxWidth = 1000;
+  var maxWidth = 1000; // default value
   if (process.env.RESIZE_WIDTH) {
     maxWidth = parseInt(process.env.RESIZE_WIDTH);
   }
 
   // Get image compress quality
-  var compressQuality = 90;
+  var compressQuality = 90; // default value
   if (process.env.COMPRESS_QUALITY) {
     compressQuality = parseInt(process.env.COMPRESS_QUALITY);
   }
   
+  // Shuffle album images
+  var shuffleGallery = false; // default value
+  if (process.env.SHUFFLE_SLIDESHOW) {
+    var shuffleGallery = (process.env.SHUFFLE_SLIDESHOW == "true");
+  }
 
   // Server Start
   // =============================================================================
@@ -144,10 +149,14 @@ if(process.env.GALLERY_URL) {
   app.get('/', (req, res) => res.send('Hello there!!'))
   app.listen(port);
   console.log("GALLERY_URL not set, stopping express server.");
-  
 }
 
-// FUNCTIONS
+// Functions //
+
+/**
+ * Fetch all images from a custom album url 
+ * @param {String} albumURL Album URL from Google Photos, Dropbox or Apple Photos.
+ */
 function fetchImages(albumURL) {
   console.log("📷 - Fetching images...");
 
@@ -289,11 +298,26 @@ function fetchImages(albumURL) {
   }
 }
 
+/**
+ * Callback function to set image array.
+ * Depending on the parameters, can also suffle image array. 
+ * @param {Array} value Images array.
+ */
 function setImagesArray(value) {
   // callback function
-  images = value;
+  if(shuffleGallery) {
+    console.log("🔀 - Shuffling images ON 🔀")
+    images = shuffle(value);
+  } else {
+    console.log("🔀 - Shuffling images OFF 🔀")
+    images = value;
+  }
 }
 
+/**
+ * From a given URL, gets the hostname
+ * @param {String} url Website url.
+ */
 function getHostName(url) {
   var match = url.match(/:\/\/(www[0-9]?\.)?(.[^/:]+)/i);
   if (
@@ -308,6 +332,10 @@ function getHostName(url) {
   }
 }
 
+/**
+ * Parse the base url for apple photos
+ * @param {String} token Token is the album id.
+ */
 function getBaseUrl(token) {
   var BASE_62_CHAR_SET =
     "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -344,6 +372,10 @@ function getBaseUrl(token) {
   return baseUrl;
 }
 
+/**
+ * Fetches the metadata for aple photos
+ * @param {String} baseUrl Apple photos album url.
+ */
 function getPhotoMetadata(baseUrl) {
   var url = baseUrl + "webstream";
 
@@ -386,6 +418,11 @@ function getPhotoMetadata(baseUrl) {
   });
 }
 
+/**
+ * Geg ULR for images
+ * @param {String} baseUrl Directory to check for images as string.
+ * @param {String} photoGuids
+ */
 function getUrls(baseUrl, photoGuids) {
   var url = baseUrl + "webasseturls";
 
@@ -428,6 +465,11 @@ function getUrls(baseUrl, photoGuids) {
   });
 }
 
+/**
+ * Get best image from meta
+ * @param {Array} metadata Directory to check for images as string.
+ * @param {Array} urls
+ */
 function decorateUrls(metadata, urls) {
   for (var photoId in metadata.photos) {
     var photo = metadata.photos[photoId];
@@ -456,6 +498,12 @@ function decorateUrls(metadata, urls) {
   }
 }
 
+/**
+ * Download file to directory
+ * @param {String} url File URL.
+ * @param {String} dest Full path of destination folder to save file.
+ * @param {String} cb Callback function. 
+ */
 function downloadFile(url, dest, cb) {
   const file = fs.createWriteStream(dest);
   const sendReq = request.get(url);
@@ -485,6 +533,11 @@ function downloadFile(url, dest, cb) {
   });
 }
 
+/**
+ * Resize image with specific width
+ * @param {String} imageFile Full path of image file.
+ * @param {Integer} maxWidth Max image width in pixels, default to 1000 px.
+ */
 function resizeFile(imageFile, maxWidth = 1000) {
   console.log("["+imageFile+"] - Analyzing");
 
@@ -515,6 +568,10 @@ function resizeFile(imageFile, maxWidth = 1000) {
   }
 }
 
+/**
+ * List images in directory 
+ * @param {String} directory Directory to check for images as string.
+ */
 function listImagesInDir(directory) {
   var images = [];
 
@@ -529,4 +586,19 @@ function listImagesInDir(directory) {
   });
 
   return images;
+}
+
+/**
+ * Shuffles array in place.
+ * @param {Array} a items An array containing the items.
+ */
+function shuffle(a) {
+  var j, x, i;
+  for (i = a.length - 1; i > 0; i--) {
+      j = Math.floor(Math.random() * (i + 1));
+      x = a[i];
+      a[i] = a[j];
+      a[j] = x;
+  }
+  return a;
 }
