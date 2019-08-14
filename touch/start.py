@@ -28,6 +28,7 @@ while True:
 
     # restart container if time is more than one minute
     if elapsed >= 600:
+        start_time = time.time()
         print(now - start_time)
         print("Restarting")
         os.system('curl --header "Content-Type:application/json" "$BALENA_SUPERVISOR_ADDRESS/v2/applications/$BALENA_APP_ID/restart-service?apikey=$BALENA_SUPERVISOR_API_KEY" -d \'{"serviceName": "wpe"}\'')
