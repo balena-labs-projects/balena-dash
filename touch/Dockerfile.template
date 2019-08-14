@@ -1,0 +1,18 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-python:3-buster-run
+
+# use `install_packages` if you need to install dependencies,
+# for instance if you need git, just uncomment the line below.
+RUN install_packages wget unzip curl
+
+# Set our working directory
+WORKDIR /usr/src/app
+
+# This will copy all files in our root to the working  directory in the container
+COPY . ./
+
+RUN wget https://github.com/pimoroni/python-multitouch/archive/master.zip && \
+    unzip master.zip && \
+    cd python-multitouch-master/library/ && \
+    sudo python3 setup.py install
+
+CMD [ "python", "start.py"]

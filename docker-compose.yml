@@ -24,3 +24,10 @@ services:
     build: ./photos
     ports:
       - "8888:8888"
+  touch:
+    privileged: true
+    restart: always
+    build: ./touch
+    labels:
+      io.balena.features.supervisor-api: '1'
+      
