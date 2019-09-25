@@ -1,1 +1,17 @@
-[]
+- commits:
+    - subject: Add machine-readable changelog
+      hash: 97fd7e1fafc3525fc70f6fc9948b4019d62fa714
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Dimitrios Lytras
+    - subject: Enable scrutinizer
+      hash: cffe8aaf6673f5fdacd98a8475fd09f2dd0684b9
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Dimitrios Lytras
+  version: 0.7.0
+  date: 2019-09-25T12:44:33.711Z
