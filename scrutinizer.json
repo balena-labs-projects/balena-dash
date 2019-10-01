@@ -5,6 +5,24 @@
     {
       "commits": [
         {
+          "subject": "photos: switch to multistage build",
+          "hash": "e01761f3da284ce8b52616ea83e80b4b007bdc71",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Shaun Mulligan shaun@balena.io",
+            "signed-off-by": "Shaun Mulligan shaun@balena.io"
+          },
+          "author": "Shaun Mulligan"
+        }
+      ],
+      "version": "0.7.2",
+      "date": "2019-10-01T06:54:34.536Z"
+    },
+    {
+      "commits": [
+        {
           "subject": "add sleep when starting wifi-connect",
           "hash": "e669fbfb400fe6c7d7f8173cfa65a5ea4da1042a",
           "body": "",
@@ -106,16 +124,12 @@
     "type": "Organization"
   },
   "dependencies": [],
-  "lastCommitDate": "2019-10-01T06:39:01Z",
+  "lastCommitDate": "2019-10-01T06:56:49Z",
   "latestRelease": null,
   "latestPreRelease": null,
   "openIssues": {
-    "numberOfIssues": 13,
+    "numberOfIssues": 12,
     "latestIssues": [
-      {
-        "title": "photos: switch to multistage build",
-        "url": "https://github.com/balena-io-projects/balena-dash/pull/49"
-      },
       {
         "title": "scheduler: add HDMI switching",
         "url": "https://github.com/balena-io-projects/balena-dash/pull/45"
@@ -166,5 +180,5 @@
       }
     ]
   },
-  "version": "0.7.1"
+  "version": "0.7.2"
 }
