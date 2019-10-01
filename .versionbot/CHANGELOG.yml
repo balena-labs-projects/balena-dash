@@ -1,4 +1,16 @@
 - commits:
+    - subject: add sleep when starting wifi-connect
+      hash: e669fbfb400fe6c7d7f8173cfa65a5ea4da1042a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Shaun Mulligan <shaun@balena.io>
+        signed-off-by: Shaun Mulligan <shaun@balena.io>
+      author: Shaun Mulligan
+  version: 0.7.1
+  date: 2019-09-30T14:34:34.712Z
+- commits:
     - subject: Add machine-readable changelog
       hash: 97fd7e1fafc3525fc70f6fc9948b4019d62fa714
       body: ''
