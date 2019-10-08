@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'Update codeowners, add PR template'
+      hash: b78a842bdc4f38398565e5a63c8a2a1f14a54bc3
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+  version: 0.7.3
+  date: 2019-10-08T10:08:16.131Z
+- commits:
     - subject: 'photos: switch to multistage build'
       hash: e01761f3da284ce8b52616ea83e80b4b007bdc71
       body: ''
