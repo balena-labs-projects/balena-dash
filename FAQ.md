@@ -16,7 +16,7 @@ The list of items you’ll need is also included below:
 - Case (optional)
 
 
-Can you use this balena-dash without the Raspberry Pi display?
+Can you use this balenaDash without the Raspberry Pi display?
 -------------------------------------------
 
 Sure! Any HDMI display will work just as well.
