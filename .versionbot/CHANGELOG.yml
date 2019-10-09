@@ -1,4 +1,14 @@
 - commits:
+    - subject: Add FAQ
+      hash: 7a835c3ee0dd32da49e98fe2280c4387ded3ab49
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Dimitrios Lytras
+  version: 0.7.4
+  date: 2019-10-09T09:40:45.382Z
+- commits:
     - subject: 'Update codeowners, add PR template'
       hash: b78a842bdc4f38398565e5a63c8a2a1f14a54bc3
       body: ''
