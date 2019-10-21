@@ -1,4 +1,4 @@
-## Photo slideshow feature
+# Photo slideshow feature
 
 One extra feature implemented on balenaDash is the ability to use it to display a photo slideshow. Out of the box you can use [Google Photo Albums](https://photos.google.com), [Dropbox Photo Album](https://www.dropbox.com) and [Apple Photos](https://www.icloud.com/). The images are downloaded automatically and auto updated in case of changes.
 
@@ -6,7 +6,7 @@ The main objective of this project is to create a physical photo album that is e
 
 This is the perfect gift for family and friends. Give a smart photo album to your mother or grandmother so that they can keep up with your baby pictures, for example.
 
-#### Google Photos Albums
+## Google Photos Albums
 
 ![](https://raw.githubusercontent.com/balena-io-playground/balena-dash-google-photos/master/media/google_photos.gif)
 
@@ -15,17 +15,17 @@ Go to [https://photos.google.com](https://photos.google.com) and select the albu
 Click in the share button, click in the `Create link` button and copy the the url.
 Example: **https://photos.app.goo.gl/rAnDoMvAlUe123**.
 
-#### Dropbox Photo Albums
+## Dropbox Photo Albums
 
 ![](https://raw.githubusercontent.com/balena-io-playground/balena-dash-google-photos/master/media/dropbox.gif)
 
 On the [dropbox](https://www.dropbox.com/home) website, go to the folder that contains the photos and click on `Share Folder` and then `Copy link`. This will the URL you will need to add to balenaCloud.
 
-#### Apple iCloud Photo Album
+## Apple iCloud Photo Album
 
 Create a photo album and copy the share url, similar to `https://www.icloud.com/sharedalbum/#ALBUM-ID`
 
-#### Setting up the photo album
+## Setting up the photo album
 
 * On balenaCloud, go to **Device variables D(x)** and add the following:
 

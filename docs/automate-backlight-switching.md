@@ -1,4 +1,5 @@
-## Automate backlight switching
+# Automate backlight switching
+
 To use automatic backlight switching you’ll need to configure a few service variables for the scheduler service.
 
 `ENABLE_BACKLIGHT_TIMER=1`

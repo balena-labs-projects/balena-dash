@@ -1,8 +1,8 @@
-## Setup and configuration
+# Setup and configuration
 
 Use of balenaDash requires that you allocate more memory to the GPU. This is achieved by adding (or editing the existing) the **Device configuration variable** `RESIN_HOST_CONFIG_gpu_mem`, for this project we recommend setting it to `396`.
 
-### Official Raspberry Pi 7-inch display
+## Official Raspberry Pi 7-inch display
 
 If you are using the official [Raspberry Pi 7 inch display](https://www.raspberrypi.org/products/raspberry-pi-touch-display/), you can follow [this tutorial](https://www.balena.io/blog/assembling-the-official-raspberry-pi-touchscreen) to assemble and configure the screen.
 
