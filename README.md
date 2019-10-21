@@ -23,7 +23,7 @@ Some examples of what you could use this for include:
 
 - **Lorem Ipsum**: Phasellus luctus laoreet magna, at finibus nibh viverra ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
 - **Lorem Ipsum**: Phasellus luctus laoreet magna, at finibus nibh viverra ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
-- **Lorem Ipsumc**:Phasellus luctus laoreet magna, at finibus nibh viverra ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
+- **Lorem Ipsumc**: Phasellus luctus laoreet magna, at finibus nibh viverra ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
 
 ## Hardware required
 
