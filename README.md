@@ -19,6 +19,12 @@ Some examples of what you could use this for include:
 * 24 hour live [animated cat](http://www.nyan.cat/) display
 * [Home automation](https://www.home-assistant.io) dashboard
 
+## Highlights
+
+- **Lorem Ipsum**: Phasellus luctus laoreet magna, at finibus nibh viverra ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
+- **Lorem Ipsum**: Phasellus luctus laoreet magna, at finibus nibh viverra ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
+- **Lorem Ipsumc**:Phasellus luctus laoreet magna, at finibus nibh viverra ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
+
 ## Hardware required
 
 We’ve partnered with our friends at [PiSupply](https://pisupp.ly/) to make it easy for you to get ahold of all the hardware you need to build this project in a single package. We’ve created two packages, one that includes everything you’ll need, and a second that includes everything apart from the display for if you’ve already got a monitor you want to use.
