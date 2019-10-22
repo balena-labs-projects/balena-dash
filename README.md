@@ -21,9 +21,9 @@ Some examples of what you could use this for include:
 
 ## Highlights
 
-- **Lorem Ipsum**: Phasellus luctus laoreet magna, at finibus nibh viverra ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
-- **Lorem Ipsum**: Phasellus luctus laoreet magna, at finibus nibh viverra ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
-- **Lorem Ipsumc**: Phasellus luctus laoreet magna, at finibus nibh viverra ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
+- **Photo frame**: Build a photo frame as a gift for remote friends and family, add new photos and media remotely.
+- **Dashboards**: Set up remotely managed dashboards for home automation, weather, news, business information and more!
+- **Live video streams**: Create live video feeds to monitor camera feeds, webcams, YouTube videos etc.
 
 ## Hardware required
 
