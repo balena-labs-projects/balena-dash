@@ -29,16 +29,17 @@ Create a photo album and copy the share url, similar to `https://www.icloud.com/
 
 * On balenaCloud, go to **Device variables D(x)** and add the following:
 
-| ENV VAR                 | Description                                                                                                                                           | Options                                        | Default       |
-|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|---------------|
-| GALLERY_URL             | Gallery URL for **google photos**, **dropbox images**, or **apple photos**                                                                            |                                                |               |
-| GALLERY_SLIDESHOW_DELAY | Slideshow delay in milliseconds                                                                                                                       |                                                | 10000         |
-| GALLERY_IMAGE_STYLE     | `Contain` shows the entire image on the screen. `Cover` zooms the image filling the entire screen.                                                    | contain,  cover                                | cover         |
-| GALLERY_EFFECT          | Transition effects                                                                                                                                    | fade,  horizontal,  vertical,  kenburns, false | fade          |
-| CRON_SCHEDULE           | Cron scheduler to reload images to get changes                                                                                                        |                                                | 0 */12 * * *  |
-| SHUFFLE_SLIDESHOW       | Shiffle images to display randomly                                                                                                                    | true, false                                    | false         |
-| RESIZE_WIDTH            | * Resize image width or height (larger side) in pixels                                                                                                |                                                | 1000px        |
-| COMPRESS_QUALITY        | * Image compression                                                                                                                                   | 0 - 100                                        | 90            |
+
+| ENV VAR | Description | Options | Default 
+|---------|-------------|---------|--------
+| GALLERY_URL             | Gallery URL for **google photos**, **dropbox images**, or **apple photos** | 
+| GALLERY_SLIDESHOW_DELAY | Slideshow delay in milliseconds  | | 10000         
+| GALLERY_IMAGE_STYLE     | `Contain` shows the entire image on the screen. `Cover` zooms the image filling the entire screen. | contain,  cover | cover         
+| GALLERY_EFFECT          | Transition effects | fade,  horizontal,  vertical,  kenburns, false | fade          
+| CRON_SCHEDULE           | Cron scheduler to reload images to get changes | | 0 */12 * * *  
+| SHUFFLE_SLIDESHOW       | Shiffle images to display randomly | true, false | false         
+| RESIZE_WIDTH            | * Resize image width or height (larger side) in pixels | | 1000px        
+| COMPRESS_QUALITY        | * Image compression    | 0 - 100 | 90            
 
 
     * Only available for iCloud photos
