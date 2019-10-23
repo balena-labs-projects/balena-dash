@@ -1,4 +1,46 @@
 - commits:
+    - subject: Moved sleep in wpe-init for custom url support
+      hash: af55b6cd24702b80371160defa42bb8894f9b12c
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anže Jenšterle
+    - subject: var check for scheduler script
+      hash: 2eb1c65ea98f96f86b82c15ba2508f23dff56b09
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anže Jenšterle
+    - subject: Added USB stick support for photos container.
+      hash: c1583569a177517db1421264169df142b360631f
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Tomás Migone
+    - subject: Update readme file
+      hash: 24ff0a50dbffb3881363dc84e371ad145dcf7391
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Daniel Andrade <daniel@balena.io>
+        signed-off-by: Daniel Andrade <daniel@balena.io>
+      author: Daniel Andrade
+    - subject: 'Add possibility to shuffle images. Closes #33'
+      hash: ab4ae7cf9eeee2c45fa27dc813eaceccee828470
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Daniel Andrade <daniel@balena.io>
+        signed-off-by: Daniel Andrade <daniel@balena.io>
+      author: Daniel Andrade
+  version: 0.8.0
+  date: 2019-10-23T11:11:58.308Z
+- commits:
     - subject: Add FAQ
       hash: 7a835c3ee0dd32da49e98fe2280c4387ded3ab49
       body: ''
