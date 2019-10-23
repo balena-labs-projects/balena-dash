@@ -1,0 +1,63 @@
+- commits:
+    - subject: Add FAQ
+      hash: 7a835c3ee0dd32da49e98fe2280c4387ded3ab49
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Dimitrios Lytras
+  version: 0.7.4
+  date: 2019-10-09T09:40:45.382Z
+- commits:
+    - subject: 'Update codeowners, add PR template'
+      hash: b78a842bdc4f38398565e5a63c8a2a1f14a54bc3
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+  version: 0.7.3
+  date: 2019-10-08T10:08:16.131Z
+- commits:
+    - subject: 'photos: switch to multistage build'
+      hash: e01761f3da284ce8b52616ea83e80b4b007bdc71
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Shaun Mulligan shaun@balena.io
+        signed-off-by: Shaun Mulligan shaun@balena.io
+      author: Shaun Mulligan
+  version: 0.7.2
+  date: 2019-10-01T06:54:34.536Z
+- commits:
+    - subject: add sleep when starting wifi-connect
+      hash: e669fbfb400fe6c7d7f8173cfa65a5ea4da1042a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Shaun Mulligan <shaun@balena.io>
+        signed-off-by: Shaun Mulligan <shaun@balena.io>
+      author: Shaun Mulligan
+  version: 0.7.1
+  date: 2019-09-30T14:34:34.712Z
+- commits:
+    - subject: Add machine-readable changelog
+      hash: 97fd7e1fafc3525fc70f6fc9948b4019d62fa714
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Dimitrios Lytras
+    - subject: Enable scrutinizer
+      hash: cffe8aaf6673f5fdacd98a8475fd09f2dd0684b9
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Dimitrios Lytras
+  version: 0.7.0
+  date: 2019-09-25T12:44:33.711Z
