@@ -1,5 +1,8 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-node:11-buster-build AS build
 
+# Install dependencies
+RUN install_packages rsync
+
 # Defines our working directory in container
 WORKDIR /usr/src/app
 
@@ -16,6 +19,13 @@ COPY --from=build /usr/src/app/node_modules node_modules
 
 # This will copy all files in our root to the working  directory in the container
 COPY . ./
+
+# Enable udev for detection of dynamically plugged devices
+ENV UDEV=on
+COPY udev/usb.rules /etc/udev/rules.d/usb.rules
+
+# Make udev script executable
+RUN chmod +x udev/copy.sh
 
 # server.js will run when container starts up on the device
 CMD ["npm", "start"]
