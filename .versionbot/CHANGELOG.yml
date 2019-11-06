@@ -1,4 +1,16 @@
 - commits:
+    - subject: Add information about PiTFT usage to readme
+      hash: 61462024ebd43dba7028d1189d86723b284df55b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+  version: 0.8.1
+  date: 2019-11-05T21:52:54.599Z
+- commits:
     - subject: Moved sleep in wpe-init for custom url support
       hash: af55b6cd24702b80371160defa42bb8894f9b12c
       body: ''
