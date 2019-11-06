@@ -54,6 +54,10 @@ If you are using the official [Raspberry Pi 7 inch display](https://www.raspberr
 
 Depending on the orientation of the majority of your content or photos, you can choose to have the display in horizontal or vertical mode. On **Fleet Configuration** add a variable called `BALENA_HOST_CONFIG_display_lcd_rotate` with value `2` for horizontal (180º rotation) or `1` for vertical (90º clockwise rotation). More details about the options for this are available [on the Raspberry Pi site](https://www.raspberrypi.org/documentation/configuration/config-txt/video.md).
 
+### Using a PiTFT
+
+The PiTFT LCD screens [from Adafruit (and others)](https://www.adafruit.com/?q=pitft) are supported, too. In order to use these displays you're required to add additional configuration by setting the `BALENA_HOST_CONFIG_dtoverlay` variable within the dashboard. This variable should be set to `pitft35-resistive,rotate=90,speed=32000000,fps=60` for the 3.5" resistive display and `pitft28-resistive,rotate=270,speed=62000000,fps=60` for the 2.8" resistive display. Other displays are also likely to work perfectly, but may need small changes to the configuration variables - we recommend checking the documentation for your particular display.
+
 ## Using WiFi Connect
 
 The balenaDash project includes [wifi-connect](https://github.com/balena-io/wifi-connect) which enables your device to operate as a WiFi access point and allow you to join a different WiFi network using captive portal functionality. Although you can specify a WiFi network to join when you first add your device and download the image from the balenaCloud dashboard, there may be situations where you need to change that.
@@ -111,7 +115,7 @@ Create a photo album and copy the share url, similar to `https://www.icloud.com/
 
 #### USB drive Photo Album
 
-Place your photos on a USB stick and plug it into the Raspberry Pi. Each time all previous existing photos will be removed and replaced by the new ones. 
+Place your photos on a USB stick and plug it into the Raspberry Pi. Each time all previous existing photos will be removed and replaced by the new ones.
 - Set ```GALLERY_URL``` to ```USBDRIVE``` to use this mode.
 - Make sure to update ```CRON_SCHEDULE``` accordingly or else image changes will only be picked up at reboot.
 
