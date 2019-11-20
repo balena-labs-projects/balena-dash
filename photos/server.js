@@ -191,11 +191,9 @@ function fetchImages(albumURL) {
         if (!error && response.statusCode == 200) {
           // Fetch and remove duplicate images
           photos = extractPhotos(body);
-          console.log("Found " + photos.length + " images.");
-
           photos = [...new Set(photos)]; // save only unique values
 
-          console.log("Found after removing duplicates " + photos.length + " images.");
+          console.log("Found " + photos.length + " images.");
           setImagesArray(photos);
         }
 
