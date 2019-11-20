@@ -169,6 +169,18 @@ function fetchImages(albumURL) {
     var photos = [];
 
     // Parse photos
+content="https://lh3.googleusercontent.com/aWHJkCsQDZiFfKmqP8NMWBenPIzXL3-9qPDRBscPnO6847CSBUJveNxkKS_qI
+aT9o_AySExJkHUow4n0xMaKA9yZk0zZAv7MEiTjWHp5zuZrbMRGhTDX5KzcDFYZbdt4ZspWa5eju_RNSbpHxDI2sWsho1HKja6bahEr7OOM1fA5RB
+8gLjLlCVLM4S36jlQ1AmM-rmoOzAQePogTBs-tlc3fIGOxgcWMHF4xeMw9cbnSFPjomyR05LUG5fx3HtSBlComJb5YHbUKoHM0u6s6iecHVyNKI
+YAvGSHFBTXfhBn-5FjT9wSEuRppJknFsMerdpQCx4srvPTT6TjUY_Z3ErQYx01h7b4eCJXDxlPueQpveNZN-x2rc-hL8Plm6ZgV7Amp6-
+3y4braMTCCUBnrvrG54oED7WKwmJE5vRpkbdF1ZcXsLdq1068KBTH5pU1Bd4sqVpe0FJdWR_gDnKuSjMZ04p_GHCZ6S1S2XVTniyKSZLzh
+v_ZaejTSdgRaC8z_Bxu1TrfDZrBDMFhwxIKereS-fhXaMpQtZ81wLL5QLGFSZou8ga03c0y3JeZ22hjWDHUqDd5mwkEeuz8cKwd80gt7ZTbpaul
+lzIRgPprDc5ycVjcYwIvjkxDB-88wEq7EBWKHS4NJmj5vlB852Sz0EZiZFBc0tbdJfhmQek7zmukHipTLz-CD3z7kj-6wnfWsP9CpGCiOwOPZcC
+F6342SecUzJI9xwJUzY0bsgOSgjD5ig70=w600-h315-p-k"><meta property="og:image:width" content="600"><meta property="og:image:height" content="315"><meta property="og:description" content="486 new photos added to shared album"><meta name="twitter:card" content="photo"><meta name="twitter:site" content="@googlephotos"><meta name="fb:app_id" content="1408502372789355"><script id='og-inHeadScript' nonce="Jo7wKDvoLT1B8ZUYoI+riw">;this.gbar_={CONFIG:[[[0,"www.gstatic.com","og.qtm.en_US.gLhC48EPkIM.O","be","en","31",0,[4,2,".40.40.40.40.40.40.","","1300102,3700250,3700697","280977644","0"],null,"Y6XVXcLyFI_uzgLSl4fQCQ",null,0,"og.qtm.1chou2snvdzv.L.W.O","AA2YrTvNhZYTe3_6zoEyNdGlK-BeLNZp2A","AA2YrTsQ6OBTRb7dW8O-_cEzmX48oJlAbw","",2,1,200,"BEL",null,null,"269","31",1],null,[1,0.1000000014901161,2,1],[1,0.001000000047497451,1],[1,0,0,null,"0","kerstmis.vda@gmail.com","","AJPG9d6J70mvcRDrAe_YLGnBKeKUOG_dXtQ1CDLwpk-3QC3_sAquJGKrdv7EMZ5p5_zW965nWwiltjFSBVAg6uRExfIciHZd3A"],[0,0,"",1,0,0,0,0,0,0,0,0,0,null,0,0,null,null,0,0,0,"","","","","","",null,0,0,0,0,0,null,null,null,"rgba(32,33,36,1)","transparent",0,0,1],["%1$s (default)","Brand account",1,"%1$s (delegated)",1,null,83,"/share/AF1QipMdcoCC46HiFxSRWMlL9db5VMoo_FpffmTQJ_bFUoeaUhMqbtc3rWxAMNl2_Oy4zw?key=NUVTNHV2UnR3b2xldk1MTGVkZGI0ckZYVlJYbXdB\u0026authuser=$authuser\u0026pageId=$pageId",null,null,null,1,"https://accounts.google.com/ListAccounts?authuser=0\u0026listPages=1\u0026fwput=10\u0026rdr=1100\u0026pid=31\u0026gpsia=1\u0026source=ogb\u0026mo=1\u0026mn=1\u0026hl=en",0,"dashboard",null,null,null,null,"Profile","",1,null,"Signed out","https://accounts.google.com/AccountChooser?source=ogb\u0026continue=$continue\u0026Email=$email","https://accounts.google.com/RemoveLocalAccount?source=ogb","Remove","Sign in",0,0,1,0,1,0,0,"000770F2032B0B3E37928DD20C07A29E8B8930F89BD04C4AD1::1574282595345",null,38,"Session expired",null,0,"https://docs.google.com/picker","Visitor",null,"Default","Delegated","Sign out of all accounts",1],null,["1","gci_91f30755d6a6b787dcc2a4062e6e9824.js","googleapis.client:plusone:gapi.iframes","0","en"],null,null,[0,"",null,"",0,"There was an error loading your Marketplace apps.","You have no Marketplace apps.",1,[31,"https://photos.google.com/?tab=qq\u0026authuser=0\u0026pageId=none","Photos","_blank","0 -2070px",null,1],null,null,null,0,[[1,"%1$s of %2$s","%1$s of %2$s in the more section"]],null,0],[1,null,null,"[[]]",["https","ogs.google.com",0,"/u/0","rt=j\u0026sourceid=31",["/u/0/_/og/customization/get",""],["/u/0/_/og/customization/set",""],["/u/0/_/og/customization/remove",""]],"AJPG9d6J70mvcRDrAe_YLGnBKeKUOG_dXtQ1CDLwpk-3QC3_sAquJGKrdv7EMZ5p5_zW965nWwiltjFSBVAg6uRExfIciHZd3A"],["m;/_/scs/abc-static/_/js/k=gapi.gapi.en.MEVzAPCznC8.O/d=1/ct=zgms/rs=AHpOoo_iL6i3Fuh5d3bLKRBazYvzpKjkxg/m=__features__","https://apis.google.com","","","1","",null,1,"es_plusone_gc_20191025.0_p0","en",null,0],[0.009999999776482582,"be","31",[null,"","0",null,1,5184000,null,null,"",0,1,"",0,0,0,0,0,0],null,[["","","0",0,0,-1]],null,0,null,null,["5061451","google\\.(com|ru|ca|by|kz|com\\.mx|com\\.tr)$",1]],[1,1,0,40400,31,"BEL","en","280977644.0",8,0.009999999776482582,1,0,null,null,0,0,"",null,null,null,"Y6XVXcLyFI_uzgLSl4fQCQ"],[[null,null,null,"https://www.gstatic.com/og/_/js/k=og.qtm.en_US.gLhC48EPkIM.O/rt=j/m=qabr,qgl,q_d,qawd,qdid,qsd,qmutsd,qbd,qapid/exm=qaaw,qadd,qaid,qein,qhaw,qhbr,qhch,qhga,qhid,qhin,qhpr/d=1/ed=1/rs=AA2YrTvNhZYTe3_6zoEyNdGlK-BeLNZp2A"],[null,null,null,"https://www.gstatic.com/og/_/ss/k=og.qtm.1chou2snvdzv.L.W.O/m=qawd,qdid/excm=qaaw,qadd,qaid,qein,qhaw,qhbr,qhch,qhga,qhid,qhin,qhpr/d=1/ed=1/ct=zgms/rs=AA2YrTsQ6OBTRb7dW8O-_cEzmX48oJlAbw"]],null,null,[""],null,null,[["mousedown","touchstart","touchmove","wheel","keydown"],300000]]],};this.gbar_=this.gbar_||{};(function(_){var window=this;
+try{
+
+
+
     const rx = /\["(https:\/\/[^\.]+.googleusercontent\.com\/[^"]+)",([0-9]+),([0-9]+),/;
     const extractPhotos = data =>
       data
@@ -191,9 +203,11 @@ function fetchImages(albumURL) {
         if (!error && response.statusCode == 200) {
           // Fetch and remove duplicate images
           photos = extractPhotos(body);
+          console.log("Found " + photos.length + " images.");
+
           photos = [...new Set(photos)]; // save only unique values
 
-          console.log("Found " + photos.length + " images.");
+          console.log("Found after removing duplicates " + photos.length + " images.");
           setImagesArray(photos);
         }
 
