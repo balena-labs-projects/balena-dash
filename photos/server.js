@@ -169,7 +169,7 @@ function fetchImages(albumURL) {
     var photos = [];
 
     // Parse photos
-    const rx = /\["(https:\/\/[^\.]+.googleusercontent\.com\/[^"]+)",([0-9]+),([0-9]+),/;
+    const rx = /\["(https:\/\/[^\.]+.googleusercontent\.com\/[^"]+)",([0-9]+),([0-9]+)[,\]]/;
     const extractPhotos = data =>
       data
         .match(new RegExp(rx, "g"))
