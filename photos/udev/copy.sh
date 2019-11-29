@@ -24,7 +24,7 @@ rsync -a --delete /mnt/storage-$USEC_INITIALIZED/ /usbstorage
 # Unmount device
 if findmnt -rno SOURCE,TARGET $DEVNAME >/dev/null; then
     echo "Unmounting device: $DEVNAME" >> /usr/src/app~/usb.log
-    unmount -f $DEVNAME
+    umount -f $DEVNAME
 else
     echo "No deviced named $DEVNAME was found." >> /usr/src/app~/usb.log
 fi
