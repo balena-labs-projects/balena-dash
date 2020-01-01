@@ -1,4 +1,17 @@
 - commits:
+    - subject: Correct unmount device `unmount` -> `umount`
+      hash: 38cad6b99d50879e1f294a40c003cc1dbc69e537
+      body: >
+        The script isn't actually umounting the drive because it calls the
+        non-existent `unmount` and should call `umount`. Same problem in
+        https://github.com/tmigone/balena-udev-examples/blob/master/usb-copy/copy.sh#L27
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: John Whittington
+  version: 0.8.3
+  date: 2020-01-01T15:52:02.029Z
+- commits:
     - subject: cosmetic
       hash: 3a7a6b17ea42d79f866eb2218996cca9b92aeb82
       body: ''
