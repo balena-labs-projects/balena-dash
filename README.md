@@ -78,6 +78,7 @@ variable. If nothing is set, balenaDash will display the balenaOS logo on the sc
 Your balenaDash device is also running a small webserver on port 8080. The screen will show the URL configured at `WPE_URL` normally, but the webserver allows you to put other URLs on screen quickly and easily. If you tell balenaCloud to expose your device's public URL, then you can even control it with Slack (or `curl`, or anything that can use webhooks).  [More details](https://github.com/mozz100/tohora/blob/master/README.md)
 
 ## Automate backlight switching
+
 To use automatic backlight switching you’ll need to configure a few service variables for the scheduler service.
 
 `ENABLE_BACKLIGHT_TIMER=1`

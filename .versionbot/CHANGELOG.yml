@@ -1,4 +1,21 @@
 - commits:
+    - subject: cosmetic
+      hash: 3a7a6b17ea42d79f866eb2218996cca9b92aeb82
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: janvda
+    - subject: removed  logging added for debugging
+      hash: 7fdbf36e31c56cc7b099a84b8980d9e2a8b23d2e
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: janvda
+  version: 0.8.2
+  date: 2020-01-01T12:12:42.548Z
+- commits:
     - subject: Add information about PiTFT usage to readme
       hash: 61462024ebd43dba7028d1189d86723b284df55b
       body: ''
