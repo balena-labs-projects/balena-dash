@@ -1,4 +1,75 @@
 - commits:
+    - subject: cosmetic
+      hash: 3a7a6b17ea42d79f866eb2218996cca9b92aeb82
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: janvda
+    - subject: removed  logging added for debugging
+      hash: 7fdbf36e31c56cc7b099a84b8980d9e2a8b23d2e
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: janvda
+  version: 0.8.2
+  date: 2020-01-01T14:33:22.101Z
+- commits:
+    - subject: Add information about PiTFT usage to readme
+      hash: 61462024ebd43dba7028d1189d86723b284df55b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+  version: 0.8.1
+  date: 2019-11-05T21:52:54.599Z
+- commits:
+    - subject: Moved sleep in wpe-init for custom url support
+      hash: af55b6cd24702b80371160defa42bb8894f9b12c
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anže Jenšterle
+    - subject: var check for scheduler script
+      hash: 2eb1c65ea98f96f86b82c15ba2508f23dff56b09
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anže Jenšterle
+    - subject: Added USB stick support for photos container.
+      hash: c1583569a177517db1421264169df142b360631f
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Tomás Migone
+    - subject: Update readme file
+      hash: 24ff0a50dbffb3881363dc84e371ad145dcf7391
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Daniel Andrade <daniel@balena.io>
+        signed-off-by: Daniel Andrade <daniel@balena.io>
+      author: Daniel Andrade
+    - subject: 'Add possibility to shuffle images. Closes #33'
+      hash: ab4ae7cf9eeee2c45fa27dc813eaceccee828470
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Daniel Andrade <daniel@balena.io>
+        signed-off-by: Daniel Andrade <daniel@balena.io>
+      author: Daniel Andrade
+  version: 0.8.0
+  date: 2019-10-23T11:11:58.308Z
+- commits:
     - subject: Add FAQ
       hash: 7a835c3ee0dd32da49e98fe2280c4387ded3ab49
       body: ''
@@ -7,7 +78,7 @@
         change-type: patch
       author: Dimitrios Lytras
   version: 0.7.4
-  date: 2019-10-09T09:43:01.438Z
+  date: 2019-10-09T09:40:45.382Z
 - commits:
     - subject: 'Update codeowners, add PR template'
       hash: b78a842bdc4f38398565e5a63c8a2a1f14a54bc3
