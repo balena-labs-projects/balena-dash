@@ -5,6 +5,22 @@
     {
       "commits": [
         {
+          "subject": "Correct unmount device `unmount` -> `umount`",
+          "hash": "38cad6b99d50879e1f294a40c003cc1dbc69e537",
+          "body": "The script isn't actually umounting the drive because it calls the non-existent `unmount` and should call `umount`. Same problem in https://github.com/tmigone/balena-udev-examples/blob/master/usb-copy/copy.sh#L27\n",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch"
+          },
+          "author": "John Whittington"
+        }
+      ],
+      "version": "0.8.3",
+      "date": "2020-01-01T15:52:02.029Z"
+    },
+    {
+      "commits": [
+        {
           "subject": "cosmetic",
           "hash": "3a7a6b17ea42d79f866eb2218996cca9b92aeb82",
           "body": "",
@@ -236,6 +252,10 @@
     {
       "username": "bettse",
       "avatar": "https://avatars3.githubusercontent.com/u/115752?v=4"
+    },
+    {
+      "username": "tuna-f1sh",
+      "avatar": "https://avatars0.githubusercontent.com/u/1886746?v=4"
     },
     {
       "username": "data-ux",
@@ -566,16 +586,12 @@
     "type": "Organization"
   },
   "dependencies": [],
-  "lastCommitDate": "2020-01-01T14:33:46Z",
+  "lastCommitDate": "2020-01-01T16:16:08Z",
   "latestRelease": null,
   "latestPreRelease": null,
   "openIssues": {
-    "numberOfIssues": 16,
+    "numberOfIssues": 15,
     "latestIssues": [
-      {
-        "title": "Correct unmount device `unmount` -> `umount`",
-        "url": "https://github.com/balena-io-projects/balena-dash/pull/58"
-      },
       {
         "title": "google photos slide show not working (only showing one photo from the google album).",
         "url": "https://github.com/balena-io-projects/balena-dash/issues/56"
@@ -638,7 +654,7 @@
       }
     ]
   },
-  "version": "0.8.2",
+  "version": "0.8.3",
   "screenshot": null,
   "logo": {
     "url": "https://www.balena.io/blog/content/images/2019/03/balenaDash_logo.png",
