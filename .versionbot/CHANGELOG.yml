@@ -1,4 +1,16 @@
 - commits:
+    - subject: Add ability to set timezone for scheduler
+      hash: 49ee6e6023f3ef676d7f62021f3b9d4d754b7fe1
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+  version: 0.8.4
+  date: 2020-01-02T14:20:39.955Z
+- commits:
     - subject: Correct unmount device `unmount` -> `umount`
       hash: 38cad6b99d50879e1f294a40c003cc1dbc69e537
       body: >
