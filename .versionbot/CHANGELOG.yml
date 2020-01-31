@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'meta: Update codeowners to HHR team'
+      hash: ecc22165bcc467d72cc73f7316df83b3562d5e50
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew McGinn <mamcgi@gmail.com>
+        signed-off-by: Matthew McGinn <mamcgi@gmail.com>
+      author: Matthew McGinn
+  version: 0.8.5
+  date: 2020-01-30T15:55:03.519Z
+- commits:
     - subject: Add ability to set timezone for scheduler
       hash: 49ee6e6023f3ef676d7f62021f3b9d4d754b7fe1
       body: ''
