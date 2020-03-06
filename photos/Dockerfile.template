@@ -15,6 +15,9 @@ RUN JOBS=MAX npm install --production --unsafe-perm && npm cache verify
 
 FROM balenalib/%%BALENA_MACHINE_NAME%%-node:11-buster
 
+# Defines our working directory in container
+WORKDIR /usr/src/app
+
 COPY --from=build /usr/src/app/node_modules node_modules
 
 # This will copy all files in our root to the working  directory in the container
