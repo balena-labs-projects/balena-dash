@@ -1,8 +1,8 @@
 version: '2'
 services:
-  wpe:
+  kiosk:
     restart: always
-    build: ./wpe
+    build: ./kiosk
     privileged: true
     ports:
       - 8080:8080
