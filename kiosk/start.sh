@@ -23,6 +23,13 @@ if [[ ! -z "$ROTATE_DISPLAY" ]]; then
   echo "(sleep 3 && xrandr -o $ROTATE_DISPLAY) &" >> /home/chromium/xstart.sh
 fi
 
+# if no window size has been specified, find the framebuffer size and use that
+if [[ -z ${WINDOW_SIZE+x} ]]
+  then
+    export WINDOW_SIZE=$( cat /sys/class/graphics/fb0/virtual_size )
+    echo "Using fullscreen: $WINDOW_SIZE"
+fi
+
 echo "xset s off -dpms" >> /home/chromium/xstart.sh
 echo "chromium-browser $FLAGS --app=$LAUNCH_URL  --window-size=$WINDOW_SIZE" >> /home/chromium/xstart.sh
 
