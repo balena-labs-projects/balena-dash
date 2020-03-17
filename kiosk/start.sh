@@ -1,5 +1,11 @@
 #!/usr/bin/bash
 
+# check GPU mem setting
+if [ "$(vcgencmd get_mem gpu | grep -o '[0-9]\+')" -lt 128 ]
+  then
+    echo -e "\033[91mWARNING: GPU MEMORY TOO LOW"
+fi
+
 export DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket
 
 
@@ -54,7 +60,7 @@ fi
 if [[ ! -z ${LAUNCH_URL+x} ]]
   then
     sleep 5
-    wget --post-data "url=$LAUNCH_URL" http://localhost:8080/launch/
+    wget --post-data "url=$LAUNCH_URL" http://localhost:8080/launch/ >/dev/null 2>&1
 fi
 
 
