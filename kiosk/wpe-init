@@ -39,6 +39,10 @@ if [[ ! -z ${WPE_URL+x} ]]
   then
     sleep 5
     wget --post-data "url=$WPE_URL" http://localhost:8080/launch/
+elif [[ ! -z ${LAUNCH_URL+x} ]]
+	then
+		sleep 5
+    wget --post-data "url=$LAUNCH_URL" http://localhost:8080/launch/
 fi
 
 tail -f /dev/null
