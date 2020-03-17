@@ -19,7 +19,7 @@ fi
 
 # Sync files
 echo "Sync: /mnt/storage-$USEC_INITIALIZED" >> /usr/src/app~/usb.log
-rsync -a --delete /mnt/storage-$USEC_INITIALIZED/ /usbstorage
+rsync -a --delete /mnt/storage-$USEC_INITIALIZED/ /usbstorage >> /usr/src/app~/usb.log
 
 # Unmount device
 if findmnt -rno SOURCE,TARGET $DEVNAME >/dev/null; then
