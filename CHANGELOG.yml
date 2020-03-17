@@ -1,4 +1,34 @@
 - commits:
+    - subject: 'photos: Remove uneccesary ~'
+      hash: 2795081f4a78af4e3ace62290e0face1009ce1a4
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+    - subject: 'usbstorage: Fix dockerfile that was broken with multistage'
+      hash: bea6c8d0244b0e5ab88b48e272429288782a7040
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+    - subject: 'photos: Fix working dir on container'
+      hash: 04f44e53a012f92cd3bf3fb2cadc82d1246c4fc3
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+  version: 0.8.6
+  date: 2020-03-17T15:58:43.248Z
+- commits:
     - subject: 'meta: Update codeowners to HHR team'
       hash: ecc22165bcc467d72cc73f7316df83b3562d5e50
       body: ''
@@ -9,7 +39,7 @@
         signed-off-by: Matthew McGinn <mamcgi@gmail.com>
       author: Matthew McGinn
   version: 0.8.5
-  date: 2020-01-31T14:17:52.692Z
+  date: 2020-01-30T15:55:03.519Z
 - commits:
     - subject: Add ability to set timezone for scheduler
       hash: 49ee6e6023f3ef676d7f62021f3b9d4d754b7fe1
