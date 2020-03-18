@@ -1,4 +1,9 @@
 #!/bin/sh
+if [ "$(vcgencmd get_mem gpu | grep -o '[0-9]\+')" -lt 128 ]
+  then
+    echo -e "\033[91mWARNING: GPU MEMORY TOO LOW"
+fi
+
 
 udevd &
 udevadm trigger
@@ -39,6 +44,10 @@ if [[ ! -z ${WPE_URL+x} ]]
   then
     sleep 5
     wget --post-data "url=$WPE_URL" http://localhost:8080/launch/
+elif [[ ! -z ${LAUNCH_URL+x} ]]
+	then
+		sleep 5
+    wget --post-data "url=$LAUNCH_URL" http://localhost:8080/launch/
 fi
 
 tail -f /dev/null

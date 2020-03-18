@@ -13,14 +13,12 @@ while [[ true ]]; do
   # nmcli -t g | grep full
 
   # 3. Is there Internet connectivity via a google ping?
-  wget --spider http://google.com 2>&1
+  wget --spider http://google.com >/dev/null 2>&1
 
   # 4. Is there an active WiFi connection?
   # iwgetid -r
 
-  if [ $? -eq 0 ]; then
-      printf 'Skipping WiFi Connect\n'
-  else
+  if [ $? -ne 0 ]; then
       printf 'Starting WiFi Connect\n'
       # Start wifi-connect with SSID "balenaDash", Password "balenaDash" and make it exit if no interaction happens within 10 minutes.
       ./wifi-connect -a 600 -s balenaDash -p balenaDash -o 80
