@@ -1,4 +1,43 @@
 - commits:
+    - subject: Added GPU mem warning for WPE
+      hash: 8922f806e584f25784dbff225da9359a5ae38caa
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+    - subject: Cleaned log and added Pi 4 GPU mem warning
+      hash: a8b7f748ce7f9e5984bc23d6f1577562d8481ac8
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+    - subject: Quieten the wifi-connect log
+      hash: 98efd9e735a3884688533725ca6e1c1433579528
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+    - subject: Change to LAUNCH_URL and default to fb size on Pi4
+      hash: 9aa7cd15588851df12303add888e912eda375e75
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+  version: 0.8.7
+  date: 2020-03-18T10:54:32.088Z
+- commits:
     - subject: 'photos: Remove uneccesary ~'
       hash: 2795081f4a78af4e3ace62290e0face1009ce1a4
       body: ''
