@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi3
+FROM balenalib/%%BALENA_MACHINE_NAME%%
 
 ENV INITSYSTEM on
 
