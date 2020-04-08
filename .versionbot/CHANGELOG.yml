@@ -1,4 +1,52 @@
 - commits:
+    - subject: Changes to support video calls and TV control with dash
+      hash: 3bc943338f7b4a20cd369b11c372f9e53440f61d
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+    - subject: Added GPU mem warning for WPE
+      hash: 4ad743a26f4250487ad3dcc794a241b9142a6fef
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+    - subject: Cleaned log and added Pi 4 GPU mem warning
+      hash: 8f9bcb4b174d88c37f68e13c8d089747dad63973
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+    - subject: Quieten the wifi-connect log
+      hash: 8295da096a859da8fa89b22c34b05510cbe226e4
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+    - subject: Change to LAUNCH_URL and default to fb size on Pi4
+      hash: 0181b0dcc4d8588d75aabec33816217b43a8e649
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+  version: 0.8.8
+  date: 2020-04-08T07:24:02.204Z
+- commits:
     - subject: Added GPU mem warning for WPE
       hash: 8922f806e584f25784dbff225da9359a5ae38caa
       body: ''
