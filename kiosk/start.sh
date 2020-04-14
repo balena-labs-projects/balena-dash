@@ -48,9 +48,11 @@ cd /home/chromium/tohora && ./tohora 8080 /home/chromium/launch.sh &
 # wait for it
 sleep 3
 
-#Turn the TV off and set the input
-#echo 'standby 0' | cec-client -s -d 1
-echo 'as' | cec-client -s -d 1
+if [[ -z $CONTROL_TV ]] && [[ $CONTROL_TV == "1" ]]
+  then
+    #Set the TV input to the Pi
+    echo 'as' | cec-client -s -d 1
+fi
 
 # Check if we have a GALLERY_URL set, otherwise load LAUNCH_URL var
 if [[ ! -z ${GALLERY_URL} ]]
