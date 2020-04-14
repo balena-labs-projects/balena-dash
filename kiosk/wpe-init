@@ -27,6 +27,21 @@ export XDG_RUNTIME_DIR=/tmp/balena/xdg_runtime
 # Enable touch screen
 export WPE_BCMRPI_TOUCH=1
 
+#Set whether to show a cursor or not
+if [[ -z ${WPE_BCMRPI_CURSOR+x} ]] # don't do anything if legacy var set
+  then
+  if [[ -z ${SHOW_CURSOR+x} ]] 
+    then
+      #disable cursor if new var also not set
+      unset WPE_BCMRPI_CURSOR
+      echo "Disabling cursor"
+    else
+      #enable cursor is new var set
+      export WPE_BCMRPI_CURSOR=1
+      echo "Enabling cursor"
+  fi
+fi
+
 # Start Tohora
 ./tohora 8080 cog &
 
