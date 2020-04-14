@@ -1,4 +1,6 @@
 version: '2'
+volumes:
+  settings:
 services:
   kiosk:
     restart: always
@@ -6,6 +8,8 @@ services:
     privileged: true
     ports:
       - 8080:8080
+    volumes:
+      - 'settings:/usr/src/app/settings'
   scheduler:
     restart: always
     build: ./scheduler

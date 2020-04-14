@@ -18,7 +18,7 @@ dpkg-reconfigure xserver-xorg-legacy
 if [[ -z ${FLAGS+x} ]]
   then
     echo "Using default chromium flags"
-    export FLAGS="--kiosk  --disable-dev-shm-usage --ignore-gpu-blacklist --enable-gpu-rasterization --force-gpu-rasterization  --autoplay-policy=no-user-gesture-required --start-fullscreen"
+    export FLAGS="--kiosk --disable-dev-shm-usage --ignore-gpu-blacklist --enable-gpu-rasterization --force-gpu-rasterization --autoplay-policy=no-user-gesture-required --start-fullscreen --user-data-dir=/usr/src/app/settings --enable-features=WebRTC-H264WithOpenH264FFmpeg"
 fi
 
 #create start script for X11
@@ -48,6 +48,11 @@ cd /home/chromium/tohora && ./tohora 8080 /home/chromium/launch.sh &
 # wait for it
 sleep 3
 
+if [[ -z $CONTROL_TV ]] && [[ $CONTROL_TV == "1" ]]
+  then
+    #Set the TV input to the Pi
+    echo 'as' | cec-client -s -d 1
+fi
 
 # Check if we have a GALLERY_URL set, otherwise load LAUNCH_URL var
 if [[ ! -z ${GALLERY_URL} ]]
