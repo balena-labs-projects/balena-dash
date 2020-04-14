@@ -5,6 +5,36 @@
     {
       "commits": [
         {
+          "subject": "Add variable to enable/disable CEC command",
+          "hash": "1fbc31913907f9ad3dcf2c71780bb125fef70490",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Phil Wilson <phil@balena.io>",
+            "signed-off-by": "Phil Wilson <phil@balena.io>"
+          },
+          "author": "Phil Wilson"
+        },
+        {
+          "subject": "Changes to support video calls and TV control with dash",
+          "hash": "7eeac22f2a296f54efff8ee6d7de912592311985",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Phil Wilson <phil@balena.io>",
+            "signed-off-by": "Phil Wilson <phil@balena.io>"
+          },
+          "author": "Phil Wilson"
+        }
+      ],
+      "version": "0.8.8",
+      "date": "2020-04-14T08:33:43.560Z"
+    },
+    {
+      "commits": [
+        {
           "subject": "Added GPU mem warning for WPE",
           "hash": "8922f806e584f25784dbff225da9359a5ae38caa",
           "body": "",
@@ -382,6 +412,14 @@
       "avatar": "https://avatars0.githubusercontent.com/u/428696?v=4"
     },
     {
+      "username": "rahul-thakoor",
+      "avatar": "https://avatars2.githubusercontent.com/u/13220877?v=4"
+    },
+    {
+      "username": "phil-d-wilson",
+      "avatar": "https://avatars0.githubusercontent.com/u/39430324?v=4"
+    },
+    {
       "username": "bettse",
       "avatar": "https://avatars3.githubusercontent.com/u/115752?v=4"
     },
@@ -709,7 +747,7 @@
   "public": true,
   "fork": false,
   "description": "Build a Raspberry Pi based desktop dashboard for stats, photos, videos and more!",
-  "stars": 178,
+  "stars": 184,
   "homepage": "https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/",
   "repositoryUrl": "https://github.com/balenalabs/balena-dash.git",
   "active": true,
@@ -720,12 +758,28 @@
     "type": "Organization"
   },
   "dependencies": [],
-  "lastCommitDate": "2020-03-18T11:01:37Z",
+  "lastCommitDate": "2020-04-14T09:43:38Z",
   "latestRelease": null,
   "latestPreRelease": null,
   "openIssues": {
-    "numberOfIssues": 14,
+    "numberOfIssues": 17,
     "latestIssues": [
+      {
+        "title": "ROTATE_DISPLAY does not behave as expected",
+        "url": "https://github.com/balenalabs/balena-dash/issues/70"
+      },
+      {
+        "title": "Add support for x64 devices",
+        "url": "https://github.com/balenalabs/balena-dash/pull/69"
+      },
+      {
+        "title": "Add support to x64 devices",
+        "url": "https://github.com/balenalabs/balena-dash/issues/68"
+      },
+      {
+        "title": "Add a variable for showing the cursor for Pi3&4",
+        "url": "https://github.com/balenalabs/balena-dash/issues/67"
+      },
       {
         "title": "Document how to persist cookies/user data",
         "url": "https://github.com/balenalabs/balena-dash/issues/66"
@@ -749,10 +803,6 @@
       {
         "title": "Nextcloud/WebDAV support for photos viewer",
         "url": "https://github.com/balenalabs/balena-dash/issues/44"
-      },
-      {
-        "title": "App not running on RPi4 (64-bit OS)",
-        "url": "https://github.com/balenalabs/balena-dash/issues/43"
       },
       {
         "title": "Loss of URL parameters from WPE_URL",
@@ -784,7 +834,7 @@
       }
     ]
   },
-  "version": "0.8.7",
+  "version": "0.8.8",
   "screenshot": null,
   "logo": {
     "url": "https://www.balena.io/blog/content/images/2019/03/balenaDash_logo.png",
