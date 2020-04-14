@@ -1,4 +1,25 @@
 - commits:
+    - subject: Add variable to enable/disable CEC command
+      hash: 1fbc31913907f9ad3dcf2c71780bb125fef70490
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+    - subject: Changes to support video calls and TV control with dash
+      hash: 7eeac22f2a296f54efff8ee6d7de912592311985
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+  version: 0.8.8
+  date: 2020-04-14T08:33:43.560Z
+- commits:
     - subject: Added GPU mem warning for WPE
       hash: 8922f806e584f25784dbff225da9359a5ae38caa
       body: ''
