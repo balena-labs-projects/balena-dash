@@ -1,4 +1,19 @@
 - commits:
+    - subject: >-
+        Implemented SHOW_CURSOR envar to control WPE and Chromium cursor status.
+        Previous WPE_BCMRPI_CURSOR still honoured to ensure backwards
+        compatibility for WPE installations.
+      hash: ab22c404c9f8bc51dd281bf97c4ce9086dc0b271
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+  version: 0.8.9
+  date: 2020-04-14T11:20:04.434Z
+- commits:
     - subject: Add variable to enable/disable CEC command
       hash: 1fbc31913907f9ad3dcf2c71780bb125fef70490
       body: ''
