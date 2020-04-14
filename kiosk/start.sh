@@ -16,12 +16,23 @@ sed -i -e 's/console/anybody/g' /etc/X11/Xwrapper.config
 echo "needs_root_rights=yes" >> /etc/X11/Xwrapper.config
 dpkg-reconfigure xserver-xorg-legacy
 
+#Set whether to run Chromium in config mode or not
+if [[ -z ${CONFIG_MODE+x} ]]
+  then
+    export KIOSK='--kiosk --start-fullscreen'
+    echo "Disabling config mode"
+    export CHROME_LAUNCH_URL="--app=$LAUNCH_URL"
+  else
+    export KIOSK=''
+    echo "Enabling config mode"
+    export CHROME_LAUNCH_URL="$LAUNCH_URL"
+fi
 
 # if FLAGS env var is not set, use default 
 if [[ -z ${FLAGS+x} ]]
   then
     echo "Using default chromium flags"
-    export FLAGS="--kiosk --disable-dev-shm-usage --ignore-gpu-blacklist --enable-gpu-rasterization --force-gpu-rasterization --autoplay-policy=no-user-gesture-required --start-fullscreen --user-data-dir=/usr/src/app/settings --enable-features=WebRTC-H264WithOpenH264FFmpeg"
+    export FLAGS=" $KIOSK --disable-dev-shm-usage --ignore-gpu-blacklist --enable-gpu-rasterization --force-gpu-rasterization --autoplay-policy=no-user-gesture-required --user-data-dir=/usr/src/app/settings --enable-features=WebRTC-H264WithOpenH264FFmpeg"
 fi
 
 #create start script for X11
@@ -40,8 +51,7 @@ if [[ -z ${WINDOW_SIZE+x} ]]
 fi
 
 echo "xset s off -dpms" >> /home/chromium/xstart.sh
-
-echo "chromium-browser $FLAGS --app=$LAUNCH_URL  --window-size=$WINDOW_SIZE" >> /home/chromium/xstart.sh
+echo "chromium-browser $CHROME_LAUNCH_URL $FLAGS  --window-size=$WINDOW_SIZE" >> /home/chromium/xstart.sh
 
 chmod 770 /home/chromium/*.sh 
 chown chromium:chromium /home/chromium/xstart.sh
