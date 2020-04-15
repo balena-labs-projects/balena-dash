@@ -1,9 +1,12 @@
 #!/usr/bin/bash
 
-# check GPU mem setting
-if [ "$(vcgencmd get_mem gpu | grep -o '[0-9]\+')" -lt 128 ]
+# check GPU mem setting for Raspberry Pi
+if [[ $BALENA_DEVICE_TYPE == *"raspberry"* ]]; 
   then
-    echo -e "\033[91mWARNING: GPU MEMORY TOO LOW"
+  if [ "$(vcgencmd get_mem gpu | grep -o '[0-9]\+')" -lt 128 ]
+    then
+      echo -e "\033[91mWARNING: GPU MEMORY TOO LOW"
+  fi
 fi
 
 export DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket
@@ -37,6 +40,7 @@ if [[ -z ${WINDOW_SIZE+x} ]]
 fi
 
 echo "xset s off -dpms" >> /home/chromium/xstart.sh
+
 echo "chromium-browser $FLAGS --app=$LAUNCH_URL  --window-size=$WINDOW_SIZE" >> /home/chromium/xstart.sh
 
 chmod 770 /home/chromium/*.sh 

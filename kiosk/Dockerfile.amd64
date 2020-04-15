@@ -1,0 +1,50 @@
+# build tohora from source
+FROM balenalib/%%BALENA_MACHINE_NAME%%-golang as builder
+
+RUN go get -d -v github.com/mozz100/tohora/...
+
+WORKDIR /go/src/github.com/mozz100/tohora
+
+RUN go build 
+
+
+# use smaller image
+FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:buster-run
+
+RUN install_packages \
+    chromium \
+    libgles2-mesa \
+    lsb-release \
+    mesa-vdpau-drivers \
+    wget \
+    x11-xserver-utils \
+    xserver-xorg-input-evdev \
+    xserver-xorg-legacy \
+    xserver-xorg-video-fbdev \
+    xserver-xorg xinit \
+    xterm 
+
+# Setting working directory
+WORKDIR /usr/src/app
+
+COPY start.sh ./
+
+ENV UDEV=1
+
+# Add chromium user
+RUN useradd chromium -m -s /bin/bash -G root && \
+    groupadd -r -f chromium && id -u chromium \
+    && chown -R chromium:chromium /home/chromium 
+
+# udev rule to set specific permissions 
+RUN usermod -a -G audio,video,tty chromium
+
+COPY public_html /home/chromium/public_html
+
+COPY --from=builder /go/src/github.com/mozz100/tohora /home/chromium/tohora
+
+COPY launch.sh /home/chromium/
+
+RUN ln -s /usr/bin/chromium /usr/bin/chromium-browser
+
+CMD ["bash", "start.sh"]
