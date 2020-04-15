@@ -18,13 +18,14 @@ fi
 
 if [[ -z ${CONFIG_MODE+x} ]]
   then
-    echo "Enabling config mode"
+    echo "Disabling config mode"
     export URL="--app=$1"
+  
+  else
+    echo "Enabling config mode"
+    export URL=$1
     export CURSOR=''
     echo "Enabling cursor"
-  else
-    echo "Disabling config mode"
-    export URL=$1
 fi
 
 echo "chromium-browser $URL $FLAGS --window-size=$WINDOW_SIZE" >> /home/chromium/xstart.sh
