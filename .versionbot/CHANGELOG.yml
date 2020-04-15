@@ -1,4 +1,25 @@
 - commits:
+    - subject: Fallback to sysfs to control backlight if vbetool fails
+      hash: 6f19dac46d72533b83571bcf037132b9952dee99
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Rahul Thakoor <rahul.thakoor@gmail.com>
+        signed-off-by: Rahul Thakoor <rahul.thakoor@gmail.com>
+      author: Rahul Thakoor
+    - subject: Add support for x64 devices
+      hash: 693224e1b5374041aa11a2b9f99726c7bfedc490
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Rahul Thakoor <rahul@balena.io>
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      author: Rahul Thakoor
+  version: 0.9.0
+  date: 2020-04-14T13:26:03.473Z
+- commits:
     - subject: Add variable to enable/disable CEC command
       hash: 1fbc31913907f9ad3dcf2c71780bb125fef70490
       body: ''
