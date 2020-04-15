@@ -17,15 +17,15 @@ echo "needs_root_rights=yes" >> /etc/X11/Xwrapper.config
 dpkg-reconfigure xserver-xorg-legacy
 
 #Set whether to run Chromium in config mode or not
-if [[ -z ${CONFIG_MODE+x} ]]
+if [ ! -z ${CONFIG_MODE+x} ] && [ "$CONFIG_MODE" -eq "1" ]
   then
-    export KIOSK='--kiosk --start-fullscreen'
-    echo "Disabling config mode"
-    export CHROME_LAUNCH_URL="--app=$LAUNCH_URL"
-  else
     export KIOSK=''
     echo "Enabling config mode"
     export CHROME_LAUNCH_URL="$LAUNCH_URL"
+  else
+   export KIOSK='--kiosk --start-fullscreen'
+    echo "Disabling config mode"
+    export CHROME_LAUNCH_URL="--app=$LAUNCH_URL"
 fi
 
 # if FLAGS env var is not set, use default 
@@ -62,7 +62,7 @@ cd /home/chromium/tohora && ./tohora 8080 /home/chromium/launch.sh &
 # wait for it
 sleep 3
 
-if [[ -z $CONTROL_TV ]] && [[ $CONTROL_TV == "1" ]]
+if [ ! -z ${CONTROL_TV+x} ] && [ "$CONTROL_TV" -eq "1" ]
   then
     #Set the TV input to the Pi
     echo 'as' | cec-client -s -d 1

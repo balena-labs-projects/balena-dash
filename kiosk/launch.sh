@@ -7,25 +7,25 @@ sleep 3
 sed -i '$d' /home/chromium/xstart.sh
 
 #Set whether to show a cursor or not
-if [[ -z ${SHOW_CURSOR+x} ]]
+if [[ ! -z $SHOW_CURSOR ]] && [[ "$SHOW_CURSOR" -eq "1" ]]
   then
-    export CURSOR='-- -nocursor'
-    echo "Disabling cursor"
-  else
     export CURSOR=''
     echo "Enabling cursor"
+  else
+    export CURSOR='-- -nocursor'
+    echo "Disabling cursor"
+    
 fi
 
-if [[ -z ${CONFIG_MODE+x} ]]
+if [ ! -z ${CONFIG_MODE+x} ] && [ "$CONFIG_MODE" -eq "1" ]
   then
-    echo "Disabling config mode"
-    export URL="--app=$1"
-  
-  else
     echo "Enabling config mode"
     export URL=$1
     export CURSOR=''
     echo "Enabling cursor"
+  else
+    echo "Disabling config mode"
+    export URL="--app=$1"
 fi
 
 echo "chromium-browser $URL $FLAGS --window-size=$WINDOW_SIZE" >> /home/chromium/xstart.sh
