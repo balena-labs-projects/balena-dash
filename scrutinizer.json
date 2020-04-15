@@ -5,6 +5,36 @@
     {
       "commits": [
         {
+          "subject": "Fallback to sysfs to control backlight if vbetool fails",
+          "hash": "6f19dac46d72533b83571bcf037132b9952dee99",
+          "body": "",
+          "footer": {
+            "Change-type": "minor",
+            "change-type": "minor",
+            "Signed-off-by": "Rahul Thakoor <rahul.thakoor@gmail.com>",
+            "signed-off-by": "Rahul Thakoor <rahul.thakoor@gmail.com>"
+          },
+          "author": "Rahul Thakoor"
+        },
+        {
+          "subject": "Add support for x64 devices",
+          "hash": "693224e1b5374041aa11a2b9f99726c7bfedc490",
+          "body": "",
+          "footer": {
+            "Change-type": "minor",
+            "change-type": "minor",
+            "Signed-off-by": "Rahul Thakoor <rahul@balena.io>",
+            "signed-off-by": "Rahul Thakoor <rahul@balena.io>"
+          },
+          "author": "Rahul Thakoor"
+        }
+      ],
+      "version": "0.9.0",
+      "date": "2020-04-14T13:26:03.473Z"
+    },
+    {
+      "commits": [
+        {
           "subject": "Add variable to enable/disable CEC command",
           "hash": "1fbc31913907f9ad3dcf2c71780bb125fef70490",
           "body": "",
@@ -758,23 +788,19 @@
     "type": "Organization"
   },
   "dependencies": [],
-  "lastCommitDate": "2020-04-14T09:43:38Z",
+  "lastCommitDate": "2020-04-15T17:20:33Z",
   "latestRelease": null,
   "latestPreRelease": null,
   "openIssues": {
-    "numberOfIssues": 17,
+    "numberOfIssues": 16,
     "latestIssues": [
+      {
+        "title": "Config mode",
+        "url": "https://github.com/balenalabs/balena-dash/pull/74"
+      },
       {
         "title": "ROTATE_DISPLAY does not behave as expected",
         "url": "https://github.com/balenalabs/balena-dash/issues/70"
-      },
-      {
-        "title": "Add support for x64 devices",
-        "url": "https://github.com/balenalabs/balena-dash/pull/69"
-      },
-      {
-        "title": "Add support to x64 devices",
-        "url": "https://github.com/balenalabs/balena-dash/issues/68"
       },
       {
         "title": "Add a variable for showing the cursor for Pi3&4",
@@ -834,7 +860,7 @@
       }
     ]
   },
-  "version": "0.8.8",
+  "version": "0.9.0",
   "screenshot": null,
   "logo": {
     "url": "https://www.balena.io/blog/content/images/2019/03/balenaDash_logo.png",
