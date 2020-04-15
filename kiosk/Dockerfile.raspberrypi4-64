@@ -22,7 +22,9 @@ RUN install_packages wget \
     chromium-browser \
     rpi-chromium-mods \ 
     libgles2-mesa \
-    lsb-release 
+    lsb-release \
+    xdotool \
+    nano
 
 # Setting working directory
 WORKDIR /usr/src/app

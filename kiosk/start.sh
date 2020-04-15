@@ -37,11 +37,12 @@ if [[ -z ${WINDOW_SIZE+x} ]]
 fi
 
 echo "xset s off -dpms" >> /home/chromium/xstart.sh
-echo "chromium-browser $FLAGS --app=$LAUNCH_URL  --window-size=$WINDOW_SIZE" >> /home/chromium/xstart.sh
+echo "chromium-browser $LAUNCH_URL $FLAGS --window-size=$WINDOW_SIZE &" >> /home/chromium/xstart.sh
 
 chmod 770 /home/chromium/*.sh 
 chown chromium:chromium /home/chromium/xstart.sh
 
+echo "while true; do xdotool keydown ctrl+Tab; xdotool keyup ctrl+Tab; sleep 10; done" >> /home/chromium/xstart.sh
 
 # Start Tohora
 cd /home/chromium/tohora && ./tohora 8080 /home/chromium/launch.sh &
