@@ -1,4 +1,57 @@
 - commits:
+    - subject: Updated the environment variable code to check their value.
+      hash: 277d21a80f407eab616962fcb0fe4aabe7a7cc47
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+    - subject: Fixed config mode bug
+      hash: dbe8ce1af52060199cd8a9fcf302b59464ddc162
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+    - subject: Enabled the cursor by default when in config mode
+      hash: ec6785fe602bda66db35f969c1f7f759b838acfa
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+    - subject: >-
+        Added config mode envar to enable or disable KIOSK, fullscreen and
+        whether the browser runs in app mode.
+      hash: bc721b88ec4cc4696bb6e19c2076ef0c539b9b14
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+    - subject: >-
+        Implemented SHOW_CURSOR envar to control WPE and Chromium cursor status.
+        Previous WPE_BCMRPI_CURSOR still honoured to ensure backwards
+        compatibility for WPE installations.
+      hash: 3df2ebefa0a071bd476d97e8184f02a6277934c7
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+  version: 0.9.1
+  date: 2020-04-16T09:27:13.895Z
+- commits:
     - subject: Fallback to sysfs to control backlight if vbetool fails
       hash: 6f19dac46d72533b83571bcf037132b9952dee99
       body: ''
@@ -18,7 +71,7 @@
         signed-off-by: Rahul Thakoor <rahul@balena.io>
       author: Rahul Thakoor
   version: 0.9.0
-  date: 2020-04-15T17:20:07.867Z
+  date: 2020-04-14T13:26:03.473Z
 - commits:
     - subject: Add variable to enable/disable CEC command
       hash: 1fbc31913907f9ad3dcf2c71780bb125fef70490

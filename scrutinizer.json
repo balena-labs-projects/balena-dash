@@ -5,6 +5,72 @@
     {
       "commits": [
         {
+          "subject": "Updated the environment variable code to check their value.",
+          "hash": "277d21a80f407eab616962fcb0fe4aabe7a7cc47",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Phil Wilson <phil@balena.io>",
+            "signed-off-by": "Phil Wilson <phil@balena.io>"
+          },
+          "author": "Phil Wilson"
+        },
+        {
+          "subject": "Fixed config mode bug",
+          "hash": "dbe8ce1af52060199cd8a9fcf302b59464ddc162",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Phil Wilson <phil@balena.io>",
+            "signed-off-by": "Phil Wilson <phil@balena.io>"
+          },
+          "author": "Phil Wilson"
+        },
+        {
+          "subject": "Enabled the cursor by default when in config mode",
+          "hash": "ec6785fe602bda66db35f969c1f7f759b838acfa",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Phil Wilson <phil@balena.io>",
+            "signed-off-by": "Phil Wilson <phil@balena.io>"
+          },
+          "author": "Phil Wilson"
+        },
+        {
+          "subject": "Added config mode envar to enable or disable KIOSK, fullscreen and whether the browser runs in app mode.",
+          "hash": "bc721b88ec4cc4696bb6e19c2076ef0c539b9b14",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Phil Wilson <phil@balena.io>",
+            "signed-off-by": "Phil Wilson <phil@balena.io>"
+          },
+          "author": "Phil Wilson"
+        },
+        {
+          "subject": "Implemented SHOW_CURSOR envar to control WPE and Chromium cursor status. Previous WPE_BCMRPI_CURSOR still honoured to ensure backwards compatibility for WPE installations.",
+          "hash": "3df2ebefa0a071bd476d97e8184f02a6277934c7",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Phil Wilson <phil@balena.io>",
+            "signed-off-by": "Phil Wilson <phil@balena.io>"
+          },
+          "author": "Phil Wilson"
+        }
+      ],
+      "version": "0.9.1",
+      "date": "2020-04-16T09:25:27.442Z"
+    },
+    {
+      "commits": [
+        {
           "subject": "Fallback to sysfs to control backlight if vbetool fails",
           "hash": "6f19dac46d72533b83571bcf037132b9952dee99",
           "body": "",
@@ -426,6 +492,14 @@
       "avatar": "https://avatars2.githubusercontent.com/u/4951004?v=4"
     },
     {
+      "username": "phil-d-wilson",
+      "avatar": "https://avatars0.githubusercontent.com/u/39430324?v=4"
+    },
+    {
+      "username": "rahul-thakoor",
+      "avatar": "https://avatars2.githubusercontent.com/u/13220877?v=4"
+    },
+    {
       "username": "shaunmulligan",
       "avatar": "https://avatars1.githubusercontent.com/u/3915043?v=4"
     },
@@ -440,14 +514,6 @@
     {
       "username": "mozz100",
       "avatar": "https://avatars0.githubusercontent.com/u/428696?v=4"
-    },
-    {
-      "username": "rahul-thakoor",
-      "avatar": "https://avatars2.githubusercontent.com/u/13220877?v=4"
-    },
-    {
-      "username": "phil-d-wilson",
-      "avatar": "https://avatars0.githubusercontent.com/u/39430324?v=4"
     },
     {
       "username": "bettse",
@@ -788,23 +854,15 @@
     "type": "Organization"
   },
   "dependencies": [],
-  "lastCommitDate": "2020-04-15T17:20:33Z",
+  "lastCommitDate": "2020-04-16T09:28:06Z",
   "latestRelease": null,
   "latestPreRelease": null,
   "openIssues": {
-    "numberOfIssues": 16,
+    "numberOfIssues": 14,
     "latestIssues": [
-      {
-        "title": "Config mode",
-        "url": "https://github.com/balenalabs/balena-dash/pull/74"
-      },
       {
         "title": "ROTATE_DISPLAY does not behave as expected",
         "url": "https://github.com/balenalabs/balena-dash/issues/70"
-      },
-      {
-        "title": "Add a variable for showing the cursor for Pi3&4",
-        "url": "https://github.com/balenalabs/balena-dash/issues/67"
       },
       {
         "title": "Document how to persist cookies/user data",
@@ -860,7 +918,7 @@
       }
     ]
   },
-  "version": "0.9.0",
+  "version": "0.9.1",
   "screenshot": null,
   "logo": {
     "url": "https://www.balena.io/blog/content/images/2019/03/balenaDash_logo.png",
