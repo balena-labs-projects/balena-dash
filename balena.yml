@@ -1,0 +1,7 @@
+applicationConfigVariables:
+    - RESIN_HOST_CONFIG_gpu_mem: 128
+applicationEnvironmentVariables:
+    - CONFIG_MODE: 0
+    - LAUNCH_URL: https://www.yout-ube.com/watch?v=08lH_hxug28
+    - SHOW_CURSOR: 0
+    - CONTROL_TV: 0    

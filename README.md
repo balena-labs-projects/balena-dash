@@ -46,7 +46,8 @@ The list of items you’ll need is also included below:
 
 ## Setup and configuration
 
-Use of balenaDash requires that you allocate more memory to the GPU. This is achieved by adding (or editing the existing) the **Device configuration variable** `RESIN_HOST_CONFIG_gpu_mem`, for this project we recommend setting it to `396`.
+This project can be deployed to a new balenaCloud application in one click using the button below:
+[![](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy)
 
 ### Official Raspberry Pi 7-inch display
 
