@@ -13,7 +13,7 @@ Try our simple [balenaCloud](https://www.balena.io/cloud) starter project to set
 
 This is the perfect introductory project to try out [balenaCloud](https://www.balena.io/cloud) and see how everything works.
 
-At the most basic level, this project allows you to display any webpage using a lightweight web browser. This means that you can build a device dedicated to showing anything that runs in a normal web browser, it will boot up and automatically start displaying what you choose.
+At the most basic level, this project allows you to display any webpage using a lightweight web browser. This means that you can build a device dedicated to showing anything that runs in a normal web browser. It will boot up and automatically start displaying what you choose.
 
 Some examples of what you could use this for include:
 
@@ -28,7 +28,7 @@ Some examples of what you could use this for include:
 
 ## Hardware required
 
-We’ve partnered with our friends at [PiSupply](https://pisupp.ly/) to make it easy for you to get ahold of all the hardware you need to build this project in a single package. We’ve created two packages, one that includes everything you’ll need, and a second that includes everything apart from the display for if you’ve already got a monitor you want to use.
+We’ve partnered with our friends at [PiSupply](https://pisupp.ly/) to make it easy for you to get ahold of all the hardware you need to build this project in a single package. We’ve created two packages: one that includes everything you’ll need, and a second that includes everything apart from the display for if you’ve already got a monitor you want to use.
 
 * **[balenaDash kit](https://uk.pi-supply.com/products/balenadash-kit)**
 * **[balenaDash kit - barebones](https://uk.pi-supply.com/products/balenadash-kit-barebones)**
@@ -47,9 +47,9 @@ The list of items you’ll need is also included below:
 ## Setup and configuration
 
 You can deploy this project to a new balenaCloud application in one click using the button below:
-[![](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy)
+[![](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs/balena-dash)
 
-Or you can create an application in your balenaCloud dashboard and `balena push` this code to it the traditional way. Just be aware that balenaDash requires that you allocate more memory to the GPU. This is achieved by adding (or editing the existing) the **Device configuration variable** `RESIN_HOST_CONFIG_gpu_mem`, for this project we recommend setting it to `128`.
+Or, you can create an application in your balenaCloud dashboard and `balena push` this code to it the traditional way. Just be aware that balenaDash requires that you allocate more memory to the GPU. This is achieved by adding (or editing the existing) the **Device configuration variable** `RESIN_HOST_CONFIG_gpu_mem`, for this project we recommend setting it to `128`.
 
 ### Official Raspberry Pi 7-inch display
 
@@ -65,7 +65,7 @@ The PiTFT LCD screens [from Adafruit (and others)](https://www.adafruit.com/?q=p
 
 The balenaDash project includes [wifi-connect](https://github.com/balena-io/wifi-connect) which enables your device to operate as a WiFi access point and allow you to join a different WiFi network using captive portal functionality. Although you can specify a WiFi network to join when you first add your device and download the image from the balenaCloud dashboard, there may be situations where you need to change that.
 
-WiFi Connect periodically tests for a functional internet connection, if nothing is found the device sets itself up as a WiFi access point named `balenaDash` that you can join with a mobile device.
+WiFi Connect periodically tests for a functional internet connection. If nothing is found, the device sets itself up as a WiFi access point named `balenaDash` that you can join with a mobile device.
 
 To use WiFi Connect you need to join the `balenaDash` network and you should see a captive portal popup. The passphrase is `balenaDash`. If not, ensure that you remain connected to the `balenaDash` network and visit the IP address of the device in a browser on port `80`. For example `http://<ip of balenaDash device>`. This will allow you to access WiFi Connect, perform a site survey and join a different WiFi network.
 
@@ -78,7 +78,7 @@ variable. If nothing is set, balenaDash will display the balenaOS logo on the sc
 
 ### Switching URLs quickly using your web browser or Slack
 
-Your balenaDash device is also running a small webserver on port 8080. The screen will show the URL configured at `LAUNCH_URL` normally, but the webserver allows you to put other URLs on screen quickly and easily. If you tell balenaCloud to expose your device's public URL, then you can even control it with Slack (or `curl`, or anything that can use webhooks).  [More details](https://github.com/mozz100/tohora/blob/master/README.md)
+Your balenaDash device is also running a small webserver on port 8080. The screen will show the URL configured at `LAUNCH_URL` normally, but the webserver allows you to put other URLs on screen quickly and easily. If you tell balenaCloud to expose your device's public URL, then you can even control it with Slack (or `curl`, or anything that can use webhooks). [More details](https://github.com/mozz100/tohora/blob/master/README.md)
 
 ## Automate backlight switching
 
@@ -96,7 +96,7 @@ To change the timezone for the scheduler, set the `TZ` service variable to somet
 
 One extra feature implemented on balenaDash is the ability to use it to display a photo slideshow. Out of the box you can use [Google Photo Albums](https://photos.google.com), [Dropbox Photo Album](https://www.dropbox.com) and [Apple Photos](https://www.icloud.com/). The images are downloaded automatically and auto updated in case of changes.
 
-The main objective of this project is to create a physical photo album that is easy to build, configure, and maintain. Once configured, there is nothing else you need to worry about. If you edit the album, add new or delete photos, as soon as the device restarts it will be updated with the last changes.
+The main objective of this project is to create a physical photo album that is easy to build, configure, and maintain. Once configured, there is nothing else you need to worry about. If you edit the album, add new or delete photos, as soon as the device restarts, it will be updated with the last changes.
 
 This is the perfect gift for family and friends. Give a smart photo album to your mother or grandmother so that they can keep up with your baby pictures, for example.
 
