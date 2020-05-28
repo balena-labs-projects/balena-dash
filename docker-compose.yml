@@ -6,21 +6,9 @@ services:
     privileged: true
     ports:
       - 8080:8080
-  scheduler:
+  LabsCoordinator:
     restart: always
-    build: ./scheduler
-    privileged: true
-  wifi-connect:
-    build: ./wifi-connect
-    restart: always
-    network_mode: host
+    build: ./labsCoordinator
     privileged: true
     labels:
-      io.balena.features.dbus: '1'
-      io.balena.features.firmware: '1'
-  photos:
-    privileged: true
-    restart: always
-    build: ./photos
-    ports:
-      - "8888:8888"
+      io.balena.features.supervisor-api: 1

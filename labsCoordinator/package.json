@@ -1,0 +1,14 @@
+{
+  "name": "labsCoordinator",
+  "version": "1.0.0",
+  "description": "balenaLabs Coordinator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Phil Wilson <phil@balena.io",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cote": "^1.0.0"
+  }
+}
