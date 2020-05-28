@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix deploy with balena URL and readme edits
+      hash: aa1a2a80dc30104e95a647cb2a642e186b3006c9
+      body: |
+        * fixed deploy with balena URL
+        * various minor readme edits
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Andrew Nhem <andrewn@balena.io>
+        signed-off-by: Andrew Nhem <andrewn@balena.io>
+      author: andrewnhem
+  version: 0.10.0
+  date: 2020-05-28T20:07:41.604Z
+- commits:
     - subject: More readme changes
       hash: e52543fad6a4e7618cd1b55e790ee36cdd19d404
       body: ''
