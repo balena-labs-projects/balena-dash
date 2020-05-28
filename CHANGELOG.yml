@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix deploy with balena URL and readme edits
+      hash: aa1a2a80dc30104e95a647cb2a642e186b3006c9
+      body: |
+        * fixed deploy with balena URL
+        * various minor readme edits
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Andrew Nhem <andrewn@balena.io>
+        signed-off-by: Andrew Nhem <andrewn@balena.io>
+      author: andrewnhem
+  version: 0.10.0
+  date: 2020-05-28T20:29:15.764Z
+- commits:
     - subject: More readme changes
       hash: e52543fad6a4e7618cd1b55e790ee36cdd19d404
       body: ''
@@ -27,7 +41,7 @@
         signed-off-by: Phil Wilson <phil@balena.io>
       author: Phil Wilson
   version: 0.9.2
-  date: 2020-04-29T13:07:57.607Z
+  date: 2020-04-28T20:17:18.329Z
 - commits:
     - subject: Updated the environment variable code to check their value.
       hash: 277d21a80f407eab616962fcb0fe4aabe7a7cc47
