@@ -1,4 +1,12 @@
 - commits:
+    - subject: 'Change-type: patch'
+      hash: 5366f50caaa7a4993bf869f069595095b620e971
+      body: Ignore videos in iCloud Photo Album
+      footer: {}
+      author: Justin Mullis
+  version: 0.10.1
+  date: 2020-06-21T18:48:05.618Z
+- commits:
     - subject: Fix deploy with balena URL and readme edits
       hash: aa1a2a80dc30104e95a647cb2a642e186b3006c9
       body: |
