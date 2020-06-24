@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update balena.yml
+      hash: 21d8f0e60d5a40bf9a737de120d5db28b1839645
+      body: |
+        Change RESIN_HOST_CONFIG_gpu_mem to BALENA_HOST_CONFIG_gpu_mem.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: John Tonello <johnt@balena.io>
+        signed-off-by: John Tonello <johnt@balena.io>
+      author: John S. Tonello
+  version: 0.10.1
+  date: 2020-06-24T14:58:15.783Z
+- commits:
     - subject: Fix deploy with balena URL and readme edits
       hash: aa1a2a80dc30104e95a647cb2a642e186b3006c9
       body: |
