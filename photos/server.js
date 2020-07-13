@@ -431,8 +431,10 @@ function getPhotoMetadata(baseUrl) {
     var photoGuids = [];
 
     data.photos.forEach(function(photo) {
-      photos[photo.photoGuid] = photo;
-      photoGuids.push(photo.photoGuid);
+      if (photo.mediaAssetType != 'video') {
+        photos[photo.photoGuid] = photo;
+        photoGuids.push(photo.photoGuid);
+      }
     });
 
     return {
