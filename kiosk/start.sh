@@ -51,7 +51,7 @@ if [[ -z ${WINDOW_SIZE+x} ]]
 fi
 
 echo "xset s off -dpms" >> /home/chromium/xstart.sh
-echo "chromium-browser $CHROME_LAUNCH_URL $FLAGS  --window-size=$WINDOW_SIZE" >> /home/chromium/xstart.sh
+echo "chromium-browser $CHROME_LAUNCH_URL $FLAGS  --window-size=$WINDOW_SIZE --window-position=0,0" >> /home/chromium/xstart.sh
 
 chmod 770 /home/chromium/*.sh 
 chown chromium:chromium /home/chromium/xstart.sh

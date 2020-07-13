@@ -28,7 +28,7 @@ if [ ! -z ${CONFIG_MODE+x} ] && [ "$CONFIG_MODE" -eq "1" ]
     export URL="--app=$1"
 fi
 
-echo "chromium-browser $URL $FLAGS --window-size=$WINDOW_SIZE" >> /home/chromium/xstart.sh
+echo "chromium-browser $URL $FLAGS --window-size=$WINDOW_SIZE --window-position=0,0" >> /home/chromium/xstart.sh
 
 # make sure any lock on the Chromium profile is released
 chown -R chromium:chromium /usr/src/app/settings
