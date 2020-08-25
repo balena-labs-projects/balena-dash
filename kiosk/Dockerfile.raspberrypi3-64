@@ -1,0 +1,50 @@
+# build tohora from source
+FROM balenalib/raspberrypi3-golang as builder
+
+RUN go get -d -v github.com/mozz100/tohora/...
+
+WORKDIR /go/src/github.com/mozz100/tohora
+
+RUN go build 
+
+
+# use smaller image
+FROM balenalib/rpi-raspbian
+
+RUN install_packages wget \
+    xserver-xorg-video-fbdev \
+    xserver-xorg xinit \
+    xterm x11-xserver-utils \
+    xterm \
+    xserver-xorg-input-evdev \
+    xserver-xorg-legacy \
+    mesa-vdpau-drivers \
+    chromium-browser \
+    rpi-chromium-mods \ 
+    libgles2-mesa \
+    lsb-release \
+    cec-utils
+
+# Setting working directory
+WORKDIR /usr/src/app
+
+COPY start.sh ./
+
+ENV UDEV=1
+
+# Add chromium user
+RUN useradd chromium -m -s /bin/bash -G root && \
+    groupadd -r -f chromium && id -u chromium \
+    && chown -R chromium:chromium /home/chromium  
+
+# udev rule to set specific permissions 
+RUN echo 'SUBSYSTEM=="vchiq",GROUP="video",MODE="0660"' > /etc/udev/rules.d/10-vchiq-permissions.rules
+RUN usermod -a -G audio,video,tty chromium
+
+COPY public_html /home/chromium/public_html
+
+COPY --from=builder /go/src/github.com/mozz100/tohora /home/chromium/tohora
+
+COPY launch.sh /home/chromium/
+
+CMD ["bash", "start.sh"]
