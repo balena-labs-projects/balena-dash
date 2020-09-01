@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add support for Raspberry Pi3 64 bits OS version using chromium
+      hash: 59a5ce9dddd0cef3260d58c879a7ceea50ba5a0b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Florin Sarbu <florin@resin.io>
+        signed-off-by: Florin Sarbu <florin@resin.io>
+      author: Florin Sarbu
+      nested: []
+  version: 0.10.3
+  date: 2020-09-01T14:43:08.200Z
+- commits:
     - subject: Adding masterclass link to readme
       hash: 8d585efd9247e09480e505d46d7bf04247de4a12
       body: >
