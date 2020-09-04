@@ -1,4 +1,15 @@
 - commits:
+    - subject: Add callback for fs.unlink()
+      hash: c1c05f82ce21e81f1d1da2d2a10b9f6b88fbb0f1
+      body: Add required callback for fs.unlink() even if the result is not checked.
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Daniel Eisterhold
+      nested: []
+  version: 0.10.3
+  date: 2020-09-04T01:35:56.682Z
+- commits:
     - subject: Adding masterclass link to readme
       hash: 8d585efd9247e09480e505d46d7bf04247de4a12
       body: >
