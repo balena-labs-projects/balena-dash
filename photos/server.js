@@ -546,13 +546,13 @@ function downloadFile(url, dest, cb) {
 
   // check for request errors
   sendReq.on("error", err => {
-    fs.unlink(dest);
+    fs.unlink(dest, (err) => {});
     console.log(err.message);
   });
 
   file.on("error", err => {
     // Handle errors
-    fs.unlink(dest); // Delete the file async. (But we don't check the result)
+    fs.unlink(dest, (err) => {}); // Delete the file async. (But we don't check the result)
     console.log(err.message);
   });
 }
