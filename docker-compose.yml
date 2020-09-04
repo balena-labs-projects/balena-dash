@@ -9,7 +9,7 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - 'settings:/usr/src/app/settings'
+      - 'settings:/data'
   scheduler:
     restart: always
     build: ./scheduler
@@ -22,9 +22,3 @@ services:
     labels:
       io.balena.features.dbus: '1'
       io.balena.features.firmware: '1'
-  photos:
-    privileged: true
-    restart: always
-    build: ./photos
-    ports:
-      - "8888:8888"
