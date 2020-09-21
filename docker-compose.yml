@@ -22,3 +22,6 @@ services:
     labels:
       io.balena.features.dbus: '1'
       io.balena.features.firmware: '1'
+  fbcp:
+    image: balenablocks/fbcp
+    privileged: true
