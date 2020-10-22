@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update readme for v1.0
+      hash: d7554d631c216d269e22455b3bac47d3c46837da
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Rahul Thakoor <rahul@balena.io>
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      author: Rahul Thakoor
+      nested: []
+    - subject: Add default values in for DWB
+      hash: d639cce78ae03a1619d6270844f895f27e4c5536
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Rahul Thakoor <rahul@balena.io>
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      author: Rahul Thakoor
+      nested: []
+    - subject: Use wifi-connect block
+      hash: 00c2a81e1c28c12fd388bcf931f27b68c6ded14f
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Rahul Thakoor <rahul@balena.io>
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      author: Rahul Thakoor
+      nested: []
+    - subject: Add fbcp block
+      hash: 7b883356a71b9b0b924b53d895847b0a7682e2c7
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Rahul Thakoor <rahul@balena.io>
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      author: Rahul Thakoor
+      nested: []
+    - subject: Use browser block and remove photo service
+      hash: c1d0be1e0b9d887f7332d27cebb49630e046193d
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Rahul Thakoor <rahul@balena.io>
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      author: Rahul Thakoor
+      nested: []
+  version: 1.0.0
+  date: 2020-10-22T10:19:14.952Z
+- commits:
     - subject: Adding masterclass link to readme
       hash: 8d585efd9247e09480e505d46d7bf04247de4a12
       body: >
@@ -12,7 +65,7 @@
       author: andrewnhem
       nested: []
   version: 0.10.2
-  date: 2020-07-13T19:33:35.692Z
+  date: 2020-07-13T18:12:36.659Z
 - commits:
     - subject: Update balena.yml
       hash: 21d8f0e60d5a40bf9a737de120d5db28b1839645
