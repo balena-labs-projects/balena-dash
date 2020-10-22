@@ -1,7 +1,19 @@
 applicationConfigVariables:
     - BALENA_HOST_CONFIG_gpu_mem: 128
 applicationEnvironmentVariables:
-    - CONFIG_MODE: 0
-    - LAUNCH_URL: https://www.yout-ube.com/watch?v=08lH_hxug28
     - SHOW_CURSOR: 0
     - CONTROL_TV: 0    
+    - ENABLE_GPU: 1   
+    - KIOSK: 1
+    - PERSISTENT: 1
+    - PORTAL_SSID: balenaDash
+    - PORTAL_PASSPHRASE: balenaDash
+    - ACTIVITY_TIMEOUT: 600
+    - LAUNCH_URL: ""
+    - ROTATE_DISPLAY: normal
+    - WINDOW_SIZE: ""
+    - WINDOW_POSITION: 0,0
+    - LOCAL_HTTP_DELAY: 0
+    - FBCP_DISPLAY: ""
+
+
