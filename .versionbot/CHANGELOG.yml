@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add instructions for Device configurations when using TFT displays
+      hash: fd8ad653bc7aa861b620a3db1c8531361af53c24
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Rahul Thakoor <rahul@balena.io>
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      author: Rahul Thakoor
+      nested: []
+  version: 1.0.1
+  date: 2020-10-27T11:02:09.556Z
+- commits:
     - subject: Update readme for v1.0
       hash: d7554d631c216d269e22455b3bac47d3c46837da
       body: ''
