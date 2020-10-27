@@ -68,6 +68,17 @@ The PiTFT LCD screens [from Adafruit (and others)](https://www.adafruit.com/?q=p
 - `waveshare-st7735s-hat`
 - `kedei-v63-mpi3501`
 
+#### Configuring HDMI and TFT display sizes
+
+The following [Device Configuration](https://www.balena.io/docs/learn/manage/configuration/#configuration-variables) variables might be required for proper scaling and resolutions:
+
+| Name                                  | Value                                                                                     |
+| ------------------------------------- | ----------------------------------------------------------------------------------------- |
+| BALENA_HOST_CONFIG_hdmi_cvt           | `<width> <height> <framerate> <aspect> <margins> <interlace> <rb>` e.g 480 320 60 1 0 0 0 |
+| BALENA_HOST_CONFIG_hdmi_force_hotplug | 1                                                                                         |
+| BALENA_HOST_CONFIG_hdmi_group         | 2                                                                                         |
+| BALENA_HOST_CONFIG_hdmi_mode          | 87                                                                                        |
+
 If your display is not listed above, please check if the [fbcp-ili9341](https://github.com/juj/fbcp-ili9341) driver that `fbcp` block uses supports it. PRs are welcomed to add support for further displays in the [fbcp block](https://github.com/balenablocks/fbcp).
 
 ## Using WiFi Connect
