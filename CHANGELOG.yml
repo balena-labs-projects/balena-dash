@@ -1,4 +1,30 @@
 - commits:
+    - subject: Remove eng.traineddata file
+      hash: 70533cbd8f3321f910b9878e16d62be39ac5c157
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Rahul Thakoor <rahul@balena.io>
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      author: Rahul Thakoor
+      nested: []
+    - subject: Repo edits
+      hash: dfe2e5781f38094c9343acc6e93c6f70d7cc8ccf
+      body: |
+        Need to catch up Landr build in future, but these changes should help
+        existing users for now.
+        now.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Andrew Nhem <andrewn@balena.io>
+        signed-off-by: Andrew Nhem <andrewn@balena.io>
+      author: andrew
+      nested: []
+  version: 1.0.2
+  date: 2020-10-29T06:06:49.372Z
+- commits:
     - subject: Add instructions for Device configurations when using TFT displays
       hash: fd8ad653bc7aa861b620a3db1c8531361af53c24
       body: ''
@@ -10,7 +36,7 @@
       author: Rahul Thakoor
       nested: []
   version: 1.0.1
-  date: 2020-10-27T15:24:39.285Z
+  date: 2020-10-27T11:02:09.556Z
 - commits:
     - subject: Update readme for v1.0
       hash: d7554d631c216d269e22455b3bac47d3c46837da
