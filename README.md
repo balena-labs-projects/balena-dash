@@ -13,18 +13,24 @@ Try our simple [balenaCloud](https://www.balena.io/cloud) starter project to set
 
 This is the perfect introductory project to try out [balenaCloud](https://www.balena.io/cloud) and see how everything works.
 
-At the most basic level, this project allows you to display any webpage using a lightweight web browser. This means that you can build a device dedicated to showing anything that runs in a normal web browser. It will boot up and automatically start displaying what you choose.
+At the most basic level, this project allows you to display any webpage using a lightweight web browser. This means that you can build a device dedicated to showing anything that runs in a normal web browser. It will boot up and automatically start displaying your content.
 
 Some examples of what you could use this for include:
 
-- [Instagram](https://instagram.com) photo stream (based on hashtag or user)
 - Data-centric dashboards using [Grafana](https://grafana.com/) or [Datadog](https://www.datadoghq.com/)
-- Live digital photo frame feeding from [Google Photos](https://photos.google.com/)
 - Display for services such as [Flightradar24](https://www.flightradar24.com/) or [Flightaware](https://flightaware.com/)
 - Digital [fishtank](http://www.fishgl.com/) or [jellyfish](https://arodic.github.io/p/jellyfish/)
 - Streaming webcam display
+- Digital signage for storefronts
 - 24 hour live [animated cat](http://www.nyan.cat/) display
 - [Home automation](https://www.home-assistant.io) dashboard
+
+Previously, balenaDash supported a photo gallery features such as: 
+
+- [Instagram](https://instagram.com) photo stream (based on hashtag or user)
+- Live digital photo frame feeding from [Google Photos](https://photos.google.com/) or Apple iCloud accounts
+
+We've removed that in version 1.0 and encourage people wanting this functionality to try our new [Photo Slideshow project](https://github.com/balenalabs-incubator/photo-slideshow), a project based on balenaDash.
 
 ## Hardware required
 
@@ -59,7 +65,6 @@ As from `v1.0.0`, balenaDash uses the [fbcp block](https://github.com/balenabloc
 The PiTFT LCD screens [from Adafruit (and others)](https://www.adafruit.com/?q=pitft) are supported. In order to use these displays you're required to add additional configuration by setting the `FBCP_DISPLAY` variable within the dashboard. This variable should be set to one of the values below:
 
 - `adafruit-hx8357d-pitft`
-- `adafruit-ili9341-pitft`
 - `adafruit-ili9341-pitft`
 - `freeplaytech-waveshare32b`
 - `waveshare35b-ili9486`
