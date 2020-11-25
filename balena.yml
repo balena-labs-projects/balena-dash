@@ -29,6 +29,8 @@ applicationEnvironmentVariables:
   defaultDeviceType: "raspberry-pi-64"
   supportedDeviceTypes:
     - "raspberrypi4-64"
-
-
-
+    - "fincm3"
+    - "raspberrypi3"
+    - "raspberrypi3-64"
+    - "intel-nuc"
+    - "genericx86-64-ext"
