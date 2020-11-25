@@ -26,7 +26,7 @@ applicationEnvironmentVariables:
     - WINDOW_POSITION: 0,0
     - LOCAL_HTTP_DELAY: 0
     - FBCP_DISPLAY: ""
-  defaultDeviceType: "raspberry-pi-64"
+  defaultDeviceType: "raspberrypi-64"
   supportedDeviceTypes:
     - "raspberrypi4-64"
     - "fincm3"
