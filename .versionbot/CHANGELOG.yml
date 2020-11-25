@@ -1,4 +1,17 @@
 - commits:
+    - subject: Edit balena.yml and add logo for balenaHub
+      hash: b4cf06ed363ae2d7bc79a321fb5043c243397ef1
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Andrew Nhem <andrewn@balena.io>
+        signed-off-by: Andrew Nhem <andrewn@balena.io>
+      author: andrew
+      nested: []
+  version: 1.0.3
+  date: 2020-11-25T13:48:50.634Z
+- commits:
     - subject: Remove eng.traineddata file
       hash: 70533cbd8f3321f910b9878e16d62be39ac5c157
       body: ''
