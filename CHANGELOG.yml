@@ -1,4 +1,17 @@
 - commits:
+    - subject: Edit balena.yml and add logo for balenaHub
+      hash: b4cf06ed363ae2d7bc79a321fb5043c243397ef1
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Andrew Nhem <andrewn@balena.io>
+        signed-off-by: Andrew Nhem <andrewn@balena.io>
+      author: andrew
+      nested: []
+  version: 1.0.3
+  date: 2020-11-25T13:51:09.649Z
+- commits:
     - subject: Remove eng.traineddata file
       hash: 70533cbd8f3321f910b9878e16d62be39ac5c157
       body: ''
@@ -23,7 +36,7 @@
       author: andrew
       nested: []
   version: 1.0.2
-  date: 2020-10-29T06:06:49.372Z
+  date: 2020-10-29T06:05:09.611Z
 - commits:
     - subject: Add instructions for Device configurations when using TFT displays
       hash: fd8ad653bc7aa861b620a3db1c8531361af53c24

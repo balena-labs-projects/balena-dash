@@ -5,6 +5,25 @@
     {
       "commits": [
         {
+          "subject": "Edit balena.yml and add logo for balenaHub",
+          "hash": "b4cf06ed363ae2d7bc79a321fb5043c243397ef1",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Andrew Nhem <andrewn@balena.io>",
+            "signed-off-by": "Andrew Nhem <andrewn@balena.io>"
+          },
+          "author": "andrew",
+          "nested": []
+        }
+      ],
+      "version": "1.0.3",
+      "date": "2020-11-25T13:48:50.634Z"
+    },
+    {
+      "commits": [
+        {
           "subject": "Remove eng.traineddata file",
           "hash": "70533cbd8f3321f910b9878e16d62be39ac5c157",
           "body": "",
@@ -1057,7 +1076,7 @@
   "public": true,
   "fork": false,
   "description": "Build a Raspberry Pi based desktop dashboard for stats, photos, videos and more!",
-  "stars": 243,
+  "stars": 249,
   "homepage": "https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/",
   "repositoryUrl": "https://github.com/balenalabs/balena-dash.git",
   "active": true,
@@ -1068,12 +1087,16 @@
     "type": "Organization"
   },
   "dependencies": [],
-  "lastCommitDate": "2020-10-29T06:07:31Z",
+  "lastCommitDate": "2020-11-25T13:51:56Z",
   "latestRelease": null,
   "latestPreRelease": null,
   "openIssues": {
-    "numberOfIssues": 30,
+    "numberOfIssues": 31,
     "latestIssues": [
+      {
+        "title": "RP4 display all of the content, but not on the entire Screen for Chromium Update",
+        "url": "https://github.com/balenalabs/balena-dash/issues/110"
+      },
       {
         "title": "Kiosk: Disable F1 Key?",
         "url": "https://github.com/balenalabs/balena-dash/issues/105"
@@ -1149,14 +1172,10 @@
       {
         "title": "Add default instructional page when no LAUNCH_URL specified",
         "url": "https://github.com/balenalabs/balena-dash/issues/65"
-      },
-      {
-        "title": "Not support unicode",
-        "url": "https://github.com/balenalabs/balena-dash/issues/61"
       }
     ]
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "screenshot": null,
   "logo": {
     "url": "https://www.balena.io/blog/content/images/2019/03/balenaDash_logo.png",
