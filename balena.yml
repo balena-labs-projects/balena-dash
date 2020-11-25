@@ -9,9 +9,9 @@ assets:
     name: "logo"
 data:
   description: "Build a Raspberry Pi-based desktop dashboard for signage or dashboards remotely accessible from anywhere."
-applicationConfigVariables:
+  applicationConfigVariables:
     - BALENA_HOST_CONFIG_gpu_mem: 128
-applicationEnvironmentVariables:
+  applicationEnvironmentVariables:
     - SHOW_CURSOR: 0
     - CONTROL_TV: 0    
     - ENABLE_GPU: 1   
