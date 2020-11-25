@@ -1,3 +1,14 @@
+version: "2"
+slug: "balena-dash"
+name: "balenaDash"
+type: "sw.application"
+assets:
+  - url: "https://github.com/balenalabs/balena-dash"
+    name: "repository"
+  - url: "https://raw.githubusercontent.com/balenalabs/balena-dash/master/logo.png"
+    name: "logo"
+data:
+  description: "Build a Raspberry Pi-based desktop dashboard for signage or dashboards remotely accessible from anywhere."
 applicationConfigVariables:
     - BALENA_HOST_CONFIG_gpu_mem: 128
 applicationEnvironmentVariables:
@@ -15,5 +26,9 @@ applicationEnvironmentVariables:
     - WINDOW_POSITION: 0,0
     - LOCAL_HTTP_DELAY: 0
     - FBCP_DISPLAY: ""
+  defaultDeviceType: "raspberry-pi-64"
+  supportedDeviceTypes:
+    - "raspberrypi4-64"
+
 
 
