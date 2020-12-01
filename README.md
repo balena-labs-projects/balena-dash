@@ -14,11 +14,11 @@
  
 Run balenaDash quickly by deploying it to a balenaCloud application. Log into your [balenaCloud account](https://dashboard.balena-cloud.com/signup) (first ten devices are free and fully-featured) and deploy the application with just one click by using the button below:
  
-[![](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs/balena-dash)
+[![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs/balena-dash)
  
 ## Documentation 
  
-Head over to our [docs](https://dash.balenalabs.io) for detailed installation and usage instructions, customization options and more!
+Head over to our [docs](https://dash.balenalabs.io) for [detailed installation](https://dash.balenalabs.io/docs/getting-started), usage instructions, customization options, and more!
  
 ## Motivation
  
