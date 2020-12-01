@@ -1,4 +1,24 @@
 - commits:
+    - subject: Adding landr mvp changes to populate site
+      hash: b24b2e213b215fa20e72bb4439ef49acb6110379
+      body: |
+        These changes should help Landr populate JSON and build a site. Items to
+        improve and investigate further include:
+         * architecture/blocks information
+         * improve device support
+
+        This at least lets us test recent Landr updates/improvements that also
+        loop in recent blocks updates for balenaDash.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Andrew Nhem <andrewn@balena.io>
+        signed-off-by: Andrew Nhem <andrewn@balena.io>
+      author: andrew
+      nested: []
+  version: 1.1.0
+  date: 2020-12-01T23:55:59.272Z
+- commits:
     - subject: 'meta: Fix balena.yml identation'
       hash: 5755bf6e067308528b1fc7ff7de08d396a961524
       body: ''
