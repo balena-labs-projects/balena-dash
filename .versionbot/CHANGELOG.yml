@@ -1,4 +1,17 @@
 - commits:
+    - subject: Use svg deploy with balena button
+      hash: 03c8f5378297e5e4448c6af25816599e092d9664
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Amit Solanki <amit@balena.io>
+        signed-off-by: Amit Solanki <amit@balena.io>
+      author: Amit Solanki
+      nested: []
+  version: 1.0.5
+  date: 2020-12-02T00:00:30.298Z
+- commits:
     - subject: 'meta: Fix balena.yml identation'
       hash: 5755bf6e067308528b1fc7ff7de08d396a961524
       body: ''
