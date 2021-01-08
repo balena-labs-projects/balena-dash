@@ -34,3 +34,4 @@ data:
     - "raspberrypi3-64"
     - "intel-nuc"
     - "genericx86-64-ext"
+    - "raspberrypi400-64"
