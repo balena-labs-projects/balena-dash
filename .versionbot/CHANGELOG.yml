@@ -1,4 +1,17 @@
 - commits:
+    - subject: Added pi400 to supported devices
+      hash: 7e62042262f9e58d5b57901ad8c9293c2fe1940c
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+  version: 1.0.6
+  date: 2021-01-08T11:04:19.413Z
+- commits:
     - subject: Use svg deploy with balena button
       hash: 03c8f5378297e5e4448c6af25816599e092d9664
       body: ''
