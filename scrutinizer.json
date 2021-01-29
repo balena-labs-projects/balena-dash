@@ -5,6 +5,25 @@
     {
       "commits": [
         {
+          "subject": "description update",
+          "hash": "a224e92c229aaaabedfe4d43165e78f65d096861",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Phil Wilson <phil@balena.io>",
+            "signed-off-by": "Phil Wilson <phil@balena.io>"
+          },
+          "author": "Phil Wilson",
+          "nested": []
+        }
+      ],
+      "version": "1.0.7",
+      "date": "2021-01-29T17:58:39.898Z"
+    },
+    {
+      "commits": [
+        {
           "subject": "Added pi400 to supported devices",
           "hash": "7e62042262f9e58d5b57901ad8c9293c2fe1940c",
           "body": "",
@@ -776,71 +795,71 @@
   "contributors": [
     {
       "username": "chrisys",
-      "avatar": "https://avatars0.githubusercontent.com/u/521698?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/521698?v=4"
     },
     {
       "username": "dansku",
-      "avatar": "https://avatars1.githubusercontent.com/u/590207?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/590207?v=4"
     },
     {
       "username": "rahul-thakoor",
-      "avatar": "https://avatars2.githubusercontent.com/u/13220877?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/13220877?v=4"
     },
     {
       "username": "phil-d-wilson",
-      "avatar": "https://avatars0.githubusercontent.com/u/39430324?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/39430324?v=4"
     },
     {
       "username": "bulldozer-balena[bot]",
-      "avatar": "https://avatars0.githubusercontent.com/in/58047?v=4"
+      "avatar": "https://avatars.githubusercontent.com/in/58047?v=4"
     },
     {
       "username": "dimitrisnl",
-      "avatar": "https://avatars2.githubusercontent.com/u/4951004?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/4951004?v=4"
     },
     {
       "username": "shaunmulligan",
-      "avatar": "https://avatars1.githubusercontent.com/u/3915043?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/3915043?v=4"
     },
     {
       "username": "andrewnhem",
-      "avatar": "https://avatars2.githubusercontent.com/u/8039239?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/8039239?v=4"
     },
     {
       "username": "tmigone",
-      "avatar": "https://avatars1.githubusercontent.com/u/3076185?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/3076185?v=4"
     },
     {
       "username": "craftbyte",
-      "avatar": "https://avatars0.githubusercontent.com/u/3154203?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/3154203?v=4"
     },
     {
       "username": "mozz100",
-      "avatar": "https://avatars0.githubusercontent.com/u/428696?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/428696?v=4"
     },
     {
       "username": "iamsolankiamit",
-      "avatar": "https://avatars3.githubusercontent.com/u/3483526?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/3483526?v=4"
     },
     {
       "username": "bettse",
-      "avatar": "https://avatars3.githubusercontent.com/u/115752?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/115752?v=4"
     },
     {
       "username": "jtonello",
-      "avatar": "https://avatars0.githubusercontent.com/u/21206201?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/21206201?v=4"
     },
     {
       "username": "tuna-f1sh",
-      "avatar": "https://avatars0.githubusercontent.com/u/1886746?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/1886746?v=4"
     },
     {
       "username": "xginn8",
-      "avatar": "https://avatars1.githubusercontent.com/u/6697261?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/6697261?v=4"
     },
     {
       "username": "data-ux",
-      "avatar": "https://avatars0.githubusercontent.com/u/4941110?v=4"
+      "avatar": "https://avatars.githubusercontent.com/u/4941110?v=4"
     }
   ],
   "docs": [],
@@ -1137,23 +1156,35 @@
   "public": true,
   "fork": false,
   "description": "Build a Raspberry Pi based desktop dashboard for stats, photos, videos and more!",
-  "stars": 264,
+  "stars": 280,
   "homepage": "https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/",
   "repositoryUrl": "https://github.com/balenalabs/balena-dash.git",
   "active": true,
   "owner": {
-    "avatar": "https://avatars0.githubusercontent.com/u/11962351?v=4",
+    "avatar": "https://avatars.githubusercontent.com/u/11962351?v=4",
     "handle": "balenalabs",
     "url": "https://github.com/balenalabs",
     "type": "Organization"
   },
   "dependencies": [],
-  "lastCommitDate": "2021-01-08T11:06:58Z",
+  "lastCommitDate": "2021-01-29T18:01:20Z",
   "latestRelease": null,
   "latestPreRelease": null,
   "openIssues": {
-    "numberOfIssues": 33,
+    "numberOfIssues": 35,
     "latestIssues": [
+      {
+        "title": "No Sound",
+        "url": "https://github.com/balenalabs/balena-dash/issues/122"
+      },
+      {
+        "title": "Add preload functionality and device specific config generation to generate balenaOS image for offline updates",
+        "url": "https://github.com/balenalabs/balena-dash/issues/121"
+      },
+      {
+        "title": "Build failing on Raspberry PI 400",
+        "url": "https://github.com/balenalabs/balena-dash/issues/120"
+      },
       {
         "title": "Add dash labs domain and explore automation here",
         "url": "https://github.com/balenalabs/balena-dash/issues/117"
@@ -1165,10 +1196,6 @@
       {
         "title": "Adding landr mvp changes to populate site",
         "url": "https://github.com/balenalabs/balena-dash/pull/114"
-      },
-      {
-        "title": "RP4 display all of the content, but not on the entire Screen for Chromium Update",
-        "url": "https://github.com/balenalabs/balena-dash/issues/110"
       },
       {
         "title": "Kiosk: Disable F1 Key?",
@@ -1225,18 +1252,10 @@
       {
         "title": "Remove X-Frame-Options",
         "url": "https://github.com/balenalabs/balena-dash/issues/77"
-      },
-      {
-        "title": "Document display rotation settings with respect to touch panel for official pi display",
-        "url": "https://github.com/balenalabs/balena-dash/issues/75"
-      },
-      {
-        "title": "ROTATE_DISPLAY does not behave as expected",
-        "url": "https://github.com/balenalabs/balena-dash/issues/70"
       }
     ]
   },
-  "version": "1.0.6",
+  "version": "1.0.7",
   "screenshot": null,
   "logo": {
     "url": "https://www.balena.io/blog/content/images/2019/03/balenaDash_logo.png",
