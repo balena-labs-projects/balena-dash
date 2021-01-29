@@ -1,4 +1,17 @@
 - commits:
+    - subject: description update
+      hash: a224e92c229aaaabedfe4d43165e78f65d096861
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+  version: 1.0.7
+  date: 2021-01-29T17:58:39.898Z
+- commits:
     - subject: Added pi400 to supported devices
       hash: 7e62042262f9e58d5b57901ad8c9293c2fe1940c
       body: ''
