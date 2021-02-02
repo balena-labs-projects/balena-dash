@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update balena.yml to use contracts
+      hash: 9436dfa4f2c6e3cd17930f530b8b5c83b83e311b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 1.0.8
+  date: 2021-02-02T13:01:49.420Z
+- commits:
     - subject: description update
       hash: a224e92c229aaaabedfe4d43165e78f65d096861
       body: ''
@@ -10,7 +23,7 @@
       author: Phil Wilson
       nested: []
   version: 1.0.7
-  date: 2021-01-29T18:00:16.064Z
+  date: 2021-01-29T17:58:39.898Z
 - commits:
     - subject: Added pi400 to supported devices
       hash: 7e62042262f9e58d5b57901ad8c9293c2fe1940c
