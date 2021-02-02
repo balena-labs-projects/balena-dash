@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update balena.yml to use contracts
+      hash: 9436dfa4f2c6e3cd17930f530b8b5c83b83e311b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 1.0.8
+  date: 2021-02-02T12:59:49.345Z
+- commits:
     - subject: description update
       hash: a224e92c229aaaabedfe4d43165e78f65d096861
       body: ''
