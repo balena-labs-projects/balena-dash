@@ -5,6 +5,25 @@
     {
       "commits": [
         {
+          "subject": "Pin kiosk service to browser v1",
+          "hash": "2ba66ab5067ead5f0376f5fabb586dc598b572c4",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Rahul Thakoor <rahul@balena.io>",
+            "signed-off-by": "Rahul Thakoor <rahul@balena.io>"
+          },
+          "author": "Rahul Thakoor",
+          "nested": []
+        }
+      ],
+      "version": "1.0.9",
+      "date": "2021-04-05T15:06:41.726Z"
+    },
+    {
+      "commits": [
+        {
           "subject": "Update balena.yml to use contracts",
           "hash": "9436dfa4f2c6e3cd17930f530b8b5c83b83e311b",
           "body": "",
@@ -1175,7 +1194,7 @@
   "public": true,
   "fork": false,
   "description": "Build a Raspberry Pi based desktop dashboard for stats, photos, videos and more!",
-  "stars": 282,
+  "stars": 299,
   "homepage": "https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/",
   "repositoryUrl": "https://github.com/balenalabs/balena-dash.git",
   "active": true,
@@ -1186,12 +1205,20 @@
     "type": "Organization"
   },
   "dependencies": [],
-  "lastCommitDate": "2021-02-02T13:02:36Z",
+  "lastCommitDate": "2021-04-05T16:34:09Z",
   "latestRelease": null,
   "latestPreRelease": null,
   "openIssues": {
-    "numberOfIssues": 34,
+    "numberOfIssues": 36,
     "latestIssues": [
+      {
+        "title": "BalenaDash install on Raspberry pi 2",
+        "url": "https://github.com/balenalabs/balena-dash/issues/126"
+      },
+      {
+        "title": "What is the correct way to implement device scale for kiosk container on 4k screens?",
+        "url": "https://github.com/balenalabs/balena-dash/issues/125"
+      },
       {
         "title": "Add preload functionality and device specific config generation to generate balenaOS image for offline updates",
         "url": "https://github.com/balenalabs/balena-dash/issues/121"
@@ -1263,18 +1290,10 @@
       {
         "title": "RPi 3B+ performance with Jitsi unstable",
         "url": "https://github.com/balenalabs/balena-dash/issues/78"
-      },
-      {
-        "title": "Remove X-Frame-Options",
-        "url": "https://github.com/balenalabs/balena-dash/issues/77"
-      },
-      {
-        "title": "Document display rotation settings with respect to touch panel for official pi display",
-        "url": "https://github.com/balenalabs/balena-dash/issues/75"
       }
     ]
   },
-  "version": "1.0.8",
+  "version": "1.0.9",
   "screenshot": null,
   "logo": {
     "url": "https://www.balena.io/blog/content/images/2019/03/balenaDash_logo.png",

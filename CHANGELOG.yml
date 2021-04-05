@@ -1,4 +1,17 @@
 - commits:
+    - subject: Pin kiosk service to browser v1
+      hash: 2ba66ab5067ead5f0376f5fabb586dc598b572c4
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Rahul Thakoor <rahul@balena.io>
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      author: Rahul Thakoor
+      nested: []
+  version: 1.0.9
+  date: 2021-04-05T16:33:05.733Z
+- commits:
     - subject: Update balena.yml to use contracts
       hash: 9436dfa4f2c6e3cd17930f530b8b5c83b83e311b
       body: ''
@@ -10,7 +23,7 @@
       author: Tomás Migone
       nested: []
   version: 1.0.8
-  date: 2021-02-02T13:01:49.420Z
+  date: 2021-02-02T12:59:49.345Z
 - commits:
     - subject: description update
       hash: a224e92c229aaaabedfe4d43165e78f65d096861
