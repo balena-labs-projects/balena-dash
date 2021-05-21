@@ -1,4 +1,17 @@
 - commits:
+    - subject: contract updates
+      hash: a2eef7623352c76a7abf73e621f065cb45911386
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+  version: 1.0.10
+  date: 2021-05-21T08:15:25.739Z
+- commits:
     - subject: Pin kiosk service to browser v1
       hash: 2ba66ab5067ead5f0376f5fabb586dc598b572c4
       body: ''
@@ -10,7 +23,7 @@
       author: Rahul Thakoor
       nested: []
   version: 1.0.9
-  date: 2021-04-05T16:33:05.733Z
+  date: 2021-04-05T15:06:41.726Z
 - commits:
     - subject: Update balena.yml to use contracts
       hash: 9436dfa4f2c6e3cd17930f530b8b5c83b83e311b
