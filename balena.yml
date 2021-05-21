@@ -3,6 +3,7 @@ description: >-
   Raspberry Pi-powered digital signage or website viewer, remotely accessible
   from anywhere.
 type: sw.application
+joinable: false
 assets:
   repository:
     type: blob.asset
@@ -18,7 +19,7 @@ data:
   applicationEnvironmentVariables:
     - SHOW_CURSOR: 0
     - CONTROL_TV: 0
-    - ENABLE_GPU: 1
+    - ENABLE_GPU: 0
     - KIOSK: 1
     - PERSISTENT: 1
     - PORTAL_SSID: balenaDash
@@ -26,7 +27,6 @@ data:
     - ACTIVITY_TIMEOUT: 600
     - LAUNCH_URL: ''
     - ROTATE_DISPLAY: normal
-    - WINDOW_SIZE: ''
     - WINDOW_POSITION: '0,0'
     - LOCAL_HTTP_DELAY: 0
     - FBCP_DISPLAY: ''
