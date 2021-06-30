@@ -1,4 +1,17 @@
 - commits:
+    - subject: 'meta: remove CODEOWNERS file'
+      hash: 2811d0c5072f43d2502ad7659d2bf2a181461877
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 1.0.11
+  date: 2021-06-30T16:18:37.179Z
+- commits:
     - subject: contract updates
       hash: a2eef7623352c76a7abf73e621f065cb45911386
       body: ''
