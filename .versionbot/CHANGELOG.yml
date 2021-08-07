@@ -1,4 +1,17 @@
 - commits:
+    - subject: 'renamathon: Use new terminology'
+      hash: c57e10867390f749f0a8cdd49310dd39ad397191
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Rahul Thakoor <rahul@balena.io>
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      author: Rahul Thakoor
+      nested: []
+  version: 1.0.12
+  date: 2021-08-06T14:32:30.067Z
+- commits:
     - subject: 'meta: remove CODEOWNERS file'
       hash: 2811d0c5072f43d2502ad7659d2bf2a181461877
       body: ''
