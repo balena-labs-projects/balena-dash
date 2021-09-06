@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix tohora build issue
+      hash: 938cfcb8b5969613974aef251405d936ee645dbf
+      body: |
+        - Pin go version
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Rahul Thakoor <rahul@balena.io>
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      author: Rahul Thakoor
+      nested: []
+  version: 1.0.13
+  date: 2021-09-06T05:20:23.807Z
+- commits:
     - subject: 'renamathon: Use new terminology'
       hash: c57e10867390f749f0a8cdd49310dd39ad397191
       body: ''
@@ -10,7 +24,7 @@
       author: Rahul Thakoor
       nested: []
   version: 1.0.12
-  date: 2021-08-07T10:03:05.261Z
+  date: 2021-08-06T14:32:30.067Z
 - commits:
     - subject: 'meta: remove CODEOWNERS file'
       hash: 2811d0c5072f43d2502ad7659d2bf2a181461877
