@@ -1,5 +1,5 @@
 # build tohora from source
-FROM balenalib/raspberrypi3-golang as builder
+FROM balenalib/raspberrypi3-golang:1.15 as builder
 
 RUN go get -d -v github.com/mozz100/tohora/...
 
