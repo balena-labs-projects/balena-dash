@@ -3,6 +3,8 @@ pkill xinit
 
 sleep 3
 
+sysctl -w user.max_user_namespaces=10000
+
 # delete the last line in xstart script and replace with new settings
 sed -i '$d' /home/chromium/xstart.sh
 
