@@ -1,4 +1,17 @@
 - commits:
+    - subject: Readme updates - fix images
+      hash: 8513c11010a8d9a82e302d968e9450081dddd337
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+      nested: []
+  version: 1.0.15
+  date: 2021-12-21T13:01:19.639Z
+- commits:
     - subject: user namespacing fix
       hash: 1e20cc06c102d4e965dcbece8be492ada275f0f8
       body: ''

@@ -12,7 +12,8 @@ assets:
   logo:
     type: blob.asset
     data:
-      url: 'https://raw.githubusercontent.com/balenalabs/balena-dash/master/assets/logo.png'
+      url: >-
+        https://raw.githubusercontent.com/balenalabs/balena-dash/master/assets/logo.png
 data:
   applicationConfigVariables:
     - BALENA_HOST_CONFIG_gpu_mem: 128
@@ -39,4 +40,4 @@ data:
     - intel-nuc
     - genericx86-64-ext
     - raspberrypi400-64
-version: 1.0.14
+version: 1.0.15
