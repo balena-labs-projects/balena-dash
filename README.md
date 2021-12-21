@@ -1,4 +1,4 @@
-![balenaDash](https://www.balena.io/blog/content/images/2019/03/balenaDash_logo.png)
+![balenaDash](https://raw.githubusercontent.com/balenalabs/balena-dash/master/assets/balenaDash_logo.png)
 
 Try our simple [balenaCloud](https://www.balena.io/cloud) starter project to set up a Raspberry Pi and LCD or monitor to display any webpage or web-based dashboard. We’re creatively calling it balenaDash! Follow along with our guide to get up and running in under 30 minutes.
 
@@ -43,7 +43,7 @@ The list of items you’ll need is also included below:
 - Power supply
 - Case (optional)
 
-![](https://www.balena.io/blog/content/images/2018/11/image17.jpg)
+![](https://raw.githubusercontent.com/balenalabs/balena-dash/master/assets/hardware.jpg)
 
 ## Setup and configuration
 
