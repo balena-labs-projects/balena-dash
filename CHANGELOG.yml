@@ -1,4 +1,17 @@
 - commits:
+    - subject: Readme updates - fix images
+      hash: 8513c11010a8d9a82e302d968e9450081dddd337
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+      nested: []
+  version: 1.0.15
+  date: 2021-12-21T13:03:58.668Z
+- commits:
     - subject: user namespacing fix
       hash: 1e20cc06c102d4e965dcbece8be492ada275f0f8
       body: ''
@@ -10,7 +23,7 @@
       author: Phil Wilson
       nested: []
   version: 1.0.14
-  date: 2021-10-18T08:29:47.917Z
+  date: 2021-10-18T08:27:56.630Z
 - commits:
     - subject: Fix tohora build issue
       hash: 938cfcb8b5969613974aef251405d936ee645dbf
