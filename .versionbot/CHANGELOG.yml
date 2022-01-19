@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'Edits to readme, fix DWB position'
+      hash: d217747960cb90c869b04cd73f4477c3c74d83da
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Andrew Nhem
+      nested: []
+  version: 1.0.16
+  date: 2022-01-19T18:47:40.730Z
+- commits:
     - subject: Readme updates - fix images
       hash: 8513c11010a8d9a82e302d968e9450081dddd337
       body: ''
