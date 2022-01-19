@@ -1,6 +1,6 @@
 ![balenaDash](https://raw.githubusercontent.com/balenalabs/balena-dash/master/assets/balenaDash_logo.png)
 
-Try our simple [balenaCloud](https://www.balena.io/cloud) starter project to set up a Raspberry Pi and LCD or monitor to display any webpage or web-based dashboard. We’re creatively calling it balenaDash! Follow along with our guide to get up and running in under 30 minutes.
+Try our simple [balenaCloud](https://www.balena.io/cloud) starter project to set up a Raspberry Pi and LCD or monitor to display any webpage or web-based dashboard. We’re calling it balenaDash! Follow along with our guide to get up and running in under 30 minutes.
 
 - [Introduction](#introduction)
 - [Hardware required](#hardware-required)
@@ -13,7 +13,7 @@ Try our simple [balenaCloud](https://www.balena.io/cloud) starter project to set
 
 This is the perfect introductory project to try out [balenaCloud](https://www.balena.io/cloud) and see how everything works.
 
-At the most basic level, this project allows you to display any webpage using a lightweight web browser. This means that you can build a device dedicated to showing anything that runs in a normal web browser. It will boot up and automatically start displaying your content.
+At the most basic level, this project allows you to display any webpage using a lightweight web browser. This means that you can build a device dedicated to showing anything that runs in a normal web browser. It will boot up and automatically and display your content.
 
 Some examples of what you could use this for include:
 
@@ -48,9 +48,10 @@ The list of items you’ll need is also included below:
 ## Setup and configuration
 
 You can deploy this app to a new balenaCloud fleet in one click using the button below:
+
 [![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs/balena-dash)
 
-Or, you can create a fleet in your balenaCloud dashboard and `balena push` this code to it the traditional way. Just be aware that balenaDash requires that you allocate more memory to the GPU. This is achieved by adding (or editing the existing) the **Device configuration variable** `BALENA_HOST_CONFIG_gpu_mem`, for this project we recommend setting it to `128`.
+Or, you can create a Fleet in your balenaCloud dashboard and `balena push` this code to it the traditional way. Just be aware that balenaDash requires that you allocate more memory to the GPU. This is achieved by adding (or editing the existing) the **Device configuration variable** `BALENA_HOST_CONFIG_gpu_mem`, for this project we recommend setting it to `128`.
 
 ### Official Raspberry Pi 7-inch display
 
