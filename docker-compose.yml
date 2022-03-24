@@ -31,4 +31,4 @@ services:
     network_mode: host
     privileged: true
     ports:
-      - 80:80
+      - 8080:80
