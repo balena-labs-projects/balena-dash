@@ -1,22 +1,4 @@
-# build tohora from source
-FROM balenalib/%%BALENA_MACHINE_NAME%%-golang:1.15 as builder
-
-RUN go get -d -v github.com/mozz100/tohora/...
-
-WORKDIR /go/src/github.com/mozz100/tohora
-
-RUN go build 
-
-
-FROM balenablocks/browser:V1
+FROM bhcr.io/balenablocks/browser-%%BALENA_ARCH%%/2.3.8
 
 RUN install_packages cec-utils
 
-COPY --from=builder /go/src/github.com/mozz100/tohora /home/chromium/tohora
-
-COPY launch.sh /home/chromium/
-
-# replace command that runs in start script
-COPY alt_start.sh /usr/src/app/
-RUN sed -i '$d' /usr/src/app/start.sh
-RUN echo ". alt_start.sh"  >> /usr/src/app/start.sh
