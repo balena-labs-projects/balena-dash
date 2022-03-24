@@ -28,7 +28,6 @@ services:
   browsercontrol:
     build: ./browsercontrol
     restart: always
-    network_mode: host
     privileged: true
     ports:
       - 8080:80
