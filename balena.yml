@@ -41,4 +41,4 @@ data:
     - intel-nuc
     - genericx86-64-ext
     - raspberrypi400-64
-version: 1.0.16
+version: 2.0.0
