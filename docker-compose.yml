@@ -23,8 +23,9 @@ services:
       io.balena.features.dbus: '1'
       io.balena.features.firmware: '1'
   fbcp:
-    image: bhcr.io/balenablocks/fbcp
+    image: bh.cr/balenablocks/fbcp/1.0.2
     privileged: true
+    restart: no
   browsercontrol:
     build: ./browsercontrol
     restart: always
