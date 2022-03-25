@@ -7,7 +7,7 @@ services:
     build: ./kiosk
     privileged: true
     ports:
-      - 8080:8080
+      - 5011:5011
     volumes:
       - 'settings:/data'
   scheduler:
@@ -23,5 +23,12 @@ services:
       io.balena.features.dbus: '1'
       io.balena.features.firmware: '1'
   fbcp:
-    image: balenablocks/fbcp
+    build: ./fbcp
+    restart: on-failure
     privileged: true
+  browsercontrol:
+    build: ./browsercontrol
+    restart: always
+    privileged: true
+    ports:
+      - 8080:80
