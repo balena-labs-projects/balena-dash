@@ -3,7 +3,28 @@ description: >-
   Raspberry Pi-powered digital signage or website viewer, remotely accessible
   from anywhere.
 type: sw.application
-joinable: false
+post-provisioning: >-
+  At the most basic level, this project allows you to display any webpage using a lightweight web browser. This means that you can build a device dedicated to showing anything that runs in a normal web browser. It will boot up and automatically and display your content.
+
+
+  Some examples of what you could use this for include:
+
+  * Data-centric dashboards using [Grafana](https://grafana.com/), [Datadog](https://www.datadoghq.com/) or [Humio](https://www.humio.com/)
+
+  * Display for services such as [Flightradar24](https://www.flightradar24.com/) or [Flightaware](https://flightaware.com/)
+
+  * Digital [fishtank](https://webglsamples.org/aquarium/aquarium.html) or [jellyfish](https://akirodic.com/p/jellyfish/)
+
+  * Streaming webcam display
+
+  * Digital signage for storefronts
+
+  * 24 hour live [animated cat](http://www.nyan.cat/) display
+  
+  * [Home automation](https://www.home-assistant.io) dashboard
+
+
+  **Deploy from balenaHub or head to the [Github repo](https://github.com/balenalabs/balena-dash) to learn more!**
 assets:
   repository:
     type: blob.asset
