@@ -5,6 +5,28 @@
     {
       "commits": [
         {
+          "subject": "Create balena.yml",
+          "hash": "eb60760eeb22994f8092078b271a2102e15b66fa",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Chris Crocker-White <chriscw@balena.io>",
+            "signed-off-by": "Chris Crocker-White <chriscw@balena.io>",
+            "Co-authored-by": "Phil Wilson <phil@balena.io>",
+            "co-authored-by": "Phil Wilson <phil@balena.io>"
+          },
+          "author": "Phil Wilson",
+          "nested": []
+        }
+      ],
+      "version": "2.0.2",
+      "title": "'Create balena.yml'",
+      "date": "2022-08-03T19:23:30.483Z"
+    },
+    {
+      "commits": [
+        {
           "subject": "Update readme fixes #153",
           "hash": "a6f5f8ea26fac9738fff4d0dc3cf917cbd3ac3bb",
           "body": "",
@@ -1362,11 +1384,11 @@
     "type": "Organization"
   },
   "dependencies": [],
-  "lastCommitDate": "2022-08-03T19:03:06Z",
+  "lastCommitDate": "2022-08-03T19:28:07Z",
   "latestRelease": null,
   "latestPreRelease": null,
   "openIssues": {
-    "numberOfIssues": 48,
+    "numberOfIssues": 47,
     "latestIssues": [
       {
         "title": "Set the audio output device to 3.5mm jack instead of HDMI",
@@ -1379,10 +1401,6 @@
       {
         "title": "Browser Control connection refused",
         "url": "https://github.com/balenalabs/balena-dash/issues/150"
-      },
-      {
-        "title": "Create balena.yml",
-        "url": "https://github.com/balenalabs/balena-dash/pull/149"
       },
       {
         "title": "Balena push fails",
@@ -1447,10 +1465,14 @@
       {
         "title": "Kiosk: Disable F1 Key?",
         "url": "https://github.com/balenalabs/balena-dash/issues/105"
+      },
+      {
+        "title": "Google photos gallery only displays 501 first photos of album.",
+        "url": "https://github.com/balenalabs/balena-dash/issues/104"
       }
     ]
   },
-  "version": "2.0.1",
+  "version": "2.0.2",
   "screenshot": null,
   "logo": {
     "url": "https://raw.githubusercontent.com/balenalabs/balena-dash/master/assets/balenaDash_logo.png",

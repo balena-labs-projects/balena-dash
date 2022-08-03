@@ -1,4 +1,20 @@
 - commits:
+    - subject: Create balena.yml
+      hash: eb60760eeb22994f8092078b271a2102e15b66fa
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        Co-authored-by: Phil Wilson <phil@balena.io>
+        co-authored-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+  version: 2.0.2
+  title: "'Create balena.yml'"
+  date: 2022-08-03T19:27:05.567Z
+- commits:
     - subject: "Update readme fixes #153"
       hash: a6f5f8ea26fac9738fff4d0dc3cf917cbd3ac3bb
       body: ""
@@ -11,7 +27,7 @@
       nested: []
   version: 2.0.1
   title: "'Update readme fixes #153'"
-  date: 2022-08-03T19:02:11.559Z
+  date: 2022-08-03T18:59:03.868Z
 - commits:
     - subject: Move to balenaCloud hosted browser block. Swap Tahora for browsercontrol.
       hash: 7037c59bf556ef368709f6d35bc89160c6148537
