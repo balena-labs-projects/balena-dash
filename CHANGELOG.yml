@@ -1,4 +1,18 @@
 - commits:
+    - subject: "Update readme fixes #153"
+      hash: a6f5f8ea26fac9738fff4d0dc3cf917cbd3ac3bb
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+      nested: []
+  version: 2.0.1
+  title: "'Update readme fixes #153'"
+  date: 2022-08-03T19:02:11.559Z
+- commits:
     - subject: Move to balenaCloud hosted browser block. Swap Tahora for browsercontrol.
       hash: 7037c59bf556ef368709f6d35bc89160c6148537
       body: ""
@@ -11,7 +25,7 @@
       nested: []
   version: 2.0.0
   title: "'Move to balenaCloud hosted browser block.'"
-  date: 2022-03-25T18:15:50.282Z
+  date: 2022-03-25T18:13:56.192Z
 - commits:
     - subject: Edits to readme, fix DWB position
       hash: d217747960cb90c869b04cd73f4477c3c74d83da
