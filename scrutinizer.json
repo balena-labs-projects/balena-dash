@@ -5,6 +5,26 @@
     {
       "commits": [
         {
+          "subject": "Bump browser block version",
+          "hash": "35d8b7b058aef2cc767e87a3c9821fff870f77ef",
+          "body": "",
+          "footer": {
+            "Change-type": "patch",
+            "change-type": "patch",
+            "Signed-off-by": "Chris Crocker-White <chriscw@balena.io>",
+            "signed-off-by": "Chris Crocker-White <chriscw@balena.io>"
+          },
+          "author": "Chris Crocker-White",
+          "nested": []
+        }
+      ],
+      "version": "2.0.4",
+      "title": "'Bump browser block version'",
+      "date": "2022-08-03T21:06:02.237Z"
+    },
+    {
+      "commits": [
+        {
           "subject": "Updated dead links",
           "hash": "3909069e66322a8abedd07a4022aad936a5deb31",
           "body": "Looks like the original Fishtank is gone so found it on webglsamples.org instead. Also Akirodic has updated the url for the jellyfish. Finally added a link to what we use the Balena-dash project for.\n",
@@ -1051,12 +1071,12 @@
       "avatar": "https://avatars.githubusercontent.com/u/521698?v=4"
     },
     {
-      "username": "phil-d-wilson",
-      "avatar": "https://avatars.githubusercontent.com/u/39430324?v=4"
-    },
-    {
       "username": "bulldozer-balena[bot]",
       "avatar": "https://avatars.githubusercontent.com/in/58047?v=4"
+    },
+    {
+      "username": "phil-d-wilson",
+      "avatar": "https://avatars.githubusercontent.com/u/39430324?v=4"
     },
     {
       "username": "dansku",
@@ -1422,11 +1442,11 @@
     "type": "Organization"
   },
   "dependencies": [],
-  "lastCommitDate": "2022-08-03T19:57:58Z",
+  "lastCommitDate": "2022-08-03T21:11:14Z",
   "latestRelease": null,
   "latestPreRelease": null,
   "openIssues": {
-    "numberOfIssues": 47,
+    "numberOfIssues": 46,
     "latestIssues": [
       {
         "title": "Set the audio output device to 3.5mm jack instead of HDMI",
@@ -1451,10 +1471,6 @@
       {
         "title": "Seems like this issue is back? [alt_start.sh: line 9: ./tohora: No such file or directory]",
         "url": "https://github.com/balenalabs/balena-dash/issues/144"
-      },
-      {
-        "title": "Updated dead links",
-        "url": "https://github.com/balenalabs/balena-dash/pull/142"
       },
       {
         "title": "Balena Dash on Rock Pi 4",
@@ -1507,10 +1523,14 @@
       {
         "title": "Google photos gallery only displays 501 first photos of album.",
         "url": "https://github.com/balenalabs/balena-dash/issues/104"
+      },
+      {
+        "title": "First image is repeated twice in rotation",
+        "url": "https://github.com/balenalabs/balena-dash/issues/102"
       }
     ]
   },
-  "version": "2.0.3",
+  "version": "2.0.4",
   "screenshot": null,
   "logo": {
     "url": "https://raw.githubusercontent.com/balenalabs/balena-dash/master/assets/balenaDash_logo.png",
