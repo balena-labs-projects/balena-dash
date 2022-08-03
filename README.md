@@ -19,7 +19,7 @@ Some examples of what you could use this for include:
 
 - Data-centric dashboards using [Grafana](https://grafana.com/) or [Datadog](https://www.datadoghq.com/)
 - Display for services such as [Flightradar24](https://www.flightradar24.com/) or [Flightaware](https://flightaware.com/)
-- Digital [fishtank](http://www.fishgl.com/) or [jellyfish](https://arodic.github.io/p/jellyfish/)
+- Digital [jellyfish](https://arodic.github.io/p/jellyfish/)
 - Streaming webcam display
 - Digital signage for storefronts
 - 24 hour live [animated cat](http://www.nyan.cat/) display
