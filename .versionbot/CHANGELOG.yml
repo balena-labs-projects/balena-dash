@@ -1,4 +1,23 @@
 - commits:
+    - subject: Updated dead links
+      hash: 3909069e66322a8abedd07a4022aad936a5deb31
+      body: >
+        Looks like the original Fishtank is gone so found it on webglsamples.org
+        instead. Also Akirodic has updated the url for the jellyfish. Finally
+        added a link to what we use the Balena-dash project for.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        Co-authored-by: Martin Westergaard Lassen <martin@mwl.dk>
+        co-authored-by: Martin Westergaard Lassen <martin@mwl.dk>
+      author: Chris Crocker-White
+      nested: []
+  version: 2.0.3
+  title: "'Updated dead links'"
+  date: 2022-08-03T19:54:26.341Z
+- commits:
     - subject: Create balena.yml
       hash: eb60760eeb22994f8092078b271a2102e15b66fa
       body: ""
