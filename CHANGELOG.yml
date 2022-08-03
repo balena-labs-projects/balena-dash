@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add notes to balena.yml
+      hash: 3f139bdd82e576ba38ca489164909cf6a670e053
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+      nested: []
+  version: 2.0.5
+  title: "'Add notes to balena.yml'"
+  date: 2022-08-03T23:27:31.531Z
+- commits:
     - subject: Bump browser block version
       hash: 35d8b7b058aef2cc767e87a3c9821fff870f77ef
       body: ""
@@ -11,7 +25,7 @@
       nested: []
   version: 2.0.4
   title: "'Bump browser block version'"
-  date: 2022-08-03T21:10:07.761Z
+  date: 2022-08-03T21:06:02.237Z
 - commits:
     - subject: Updated dead links
       hash: 3909069e66322a8abedd07a4022aad936a5deb31
