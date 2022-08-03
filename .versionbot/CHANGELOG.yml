@@ -1,4 +1,18 @@
 - commits:
+    - subject: Bump browser block version
+      hash: 35d8b7b058aef2cc767e87a3c9821fff870f77ef
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+      nested: []
+  version: 2.0.4
+  title: "'Bump browser block version'"
+  date: 2022-08-03T21:06:02.237Z
+- commits:
     - subject: Updated dead links
       hash: 3909069e66322a8abedd07a4022aad936a5deb31
       body: >
