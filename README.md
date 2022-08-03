@@ -17,9 +17,9 @@ At the most basic level, this project allows you to display any webpage using a 
 
 Some examples of what you could use this for include:
 
-- Data-centric dashboards using [Grafana](https://grafana.com/) or [Datadog](https://www.datadoghq.com/)
+- Data-centric dashboards using [Grafana](https://grafana.com/), [Datadog](https://www.datadoghq.com/) or [Humio](https://www.humio.com/)
 - Display for services such as [Flightradar24](https://www.flightradar24.com/) or [Flightaware](https://flightaware.com/)
-- Digital [jellyfish](https://arodic.github.io/p/jellyfish/)
+- Digital [fishtank](https://webglsamples.org/aquarium/aquarium.html) or [jellyfish](https://akirodic.com/p/jellyfish/)
 - Streaming webcam display
 - Digital signage for storefronts
 - 24 hour live [animated cat](http://www.nyan.cat/) display
