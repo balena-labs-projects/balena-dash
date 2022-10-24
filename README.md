@@ -1,4 +1,4 @@
-![balenaDash](https://raw.githubusercontent.com/balenalabs/balena-dash/master/assets/balenaDash_logo.png)
+![balenaDash](https://raw.githubusercontent.com/balena-labs-projects/balena-dash/master/assets/balenaDash_logo.png)
 
 Try our simple [balenaCloud](https://www.balena.io/cloud) starter project to set up a Raspberry Pi and LCD or monitor to display any webpage or web-based dashboard. We’re calling it balenaDash! Follow along with our guide to get up and running in under 30 minutes.
 
@@ -30,7 +30,7 @@ Previously, balenaDash supported a photo gallery features such as:
 - [Instagram](https://instagram.com) photo stream (based on hashtag or user)
 - Live digital photo frame feeding from [Google Photos](https://photos.google.com/) or Apple iCloud accounts
 
-We've removed that in version 1.0 and encourage people wanting this functionality to try our new [Photo Slideshow project](https://github.com/balenalabs-incubator/photo-slideshow), a project based on balenaDash.
+We've removed that in version 1.0 and encourage people wanting this functionality to try our new [Photo Slideshow project](https://github.com/balena-io-experimental/photo-slideshow), a project based on balenaDash.
 
 ## Hardware required
 
@@ -43,13 +43,13 @@ The list of items you’ll need is also included below:
 - Power supply
 - Case (optional)
 
-![](https://raw.githubusercontent.com/balenalabs/balena-dash/master/assets/hardware.jpg)
+![](https://raw.githubusercontent.com/balena-labs-projects/balena-dash/master/assets/hardware.jpg)
 
 ## Setup and configuration
 
 You can deploy this app to a new balenaCloud fleet in one click using the button below:
 
-[![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs/balena-dash)
+[![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balena-labs-projects/balena-dash)
 
 Or, you can create a Fleet in your balenaCloud dashboard and `balena push` this code to it the traditional way. Just be aware that balenaDash requires that you allocate more memory to the GPU. This is achieved by adding (or editing the existing) the **Device configuration variable** `BALENA_HOST_CONFIG_gpu_mem`, for this project we recommend setting it to `128`.
 
@@ -124,7 +124,7 @@ To change the timezone for the scheduler, set the `TZ` service variable to somet
 
 ## Photo slideshow feature
 
-This feature has been removed from balenaDash in `v1.0.0`. If you want to use the photo slideshow feature, check out the [Photo Slideshow project](https://github.com/balenalabs-incubator/photo-slideshow)
+This feature has been removed from balenaDash in `v1.0.0`. If you want to use the photo slideshow feature, check out the [Photo Slideshow project](https://github.com/balena-io-experimental/photo-slideshow)
 
 ### For a complete tutorial on how to use balenaDash, please check out our blog post at [https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/](https://www.balena.io/blog/make-a-web-frame-with-raspberry-pi-in-30-minutes/)
 
