@@ -1,4 +1,28 @@
 - commits:
+    - subject: Move to labs blocks + add flowzone
+      hash: 5577142d047185f5742d93049898dd97eea51ce5
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+      nested: []
+    - subject: Updating repo references from balenalabs to balena-labs-projects
+      hash: 47e61c8461bbd315b0268178b2b33441af04a8f3
+      body: ""
+      footer:
+        Signed-off-by: Flynn Joffray <flynn@balena.io>
+        signed-off-by: Flynn Joffray <flynn@balena.io>
+        Change-type: patch
+        change-type: patch
+      author: Flynn Joffray
+      nested: []
+  version: 2.0.6
+  title: ""
+  date: 2022-11-28T09:26:12.159Z
+- commits:
     - subject: Add notes to balena.yml
       hash: 3f139bdd82e576ba38ca489164909cf6a670e053
       body: ""
