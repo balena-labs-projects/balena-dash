@@ -1,13 +1,13 @@
 name: balenaDash
 description: >-
-  Raspberry Pi-powered digital signage or website viewer, remotely accessible
-  from anywhere.
+  Raspberry Pi-powered digital signage or website viewer, remotely
+  accessible from anywhere.
 type: sw.application
 post-provisioning: >-
-  At the most basic level, this project allows you to display any webpage using
-  a lightweight web browser. This means that you can build a device dedicated to
-  showing anything that runs in a normal web browser. It will boot up and
-  automatically and display your content.
+  At the most basic level, this project allows you to display
+  any webpage using a lightweight web browser. This means that you can build a
+  device dedicated to showing anything that runs in a normal web browser. It
+  will boot up and automatically and display your content.
 
 
   Some examples of what you could use this for include:
@@ -65,4 +65,4 @@ data:
     - intel-nuc
     - genericx86-64-ext
     - raspberrypi400-64
-version: 2.0.5
+version: 2.0.6
