@@ -1,1 +1,1 @@
-FROM bhcr.io/balenablocks/fbcp/1.0.2
+FROM bh.cr/balenalabs/fbcp/1.0.2
